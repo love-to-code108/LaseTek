@@ -14,10 +14,10 @@ import ServiceSectionImg5 from "./assets/cctv5 2.png";
 import ServiceSectionImg6 from "./assets/cctv3 1.png";
 
 // WHY CHOOSE US IMAGES
-import WhyChooseUsImg1 from "./assets/trophy.png"
-import WhyChooseUsImg2 from "./assets/team.png"
-import WhyChooseUsImg3 from "./assets/gears.png"
-import WhyChooseUsImg4 from "./assets/favorites.png"
+import WhyChooseUsImg1 from "./assets/trophy.png";
+import WhyChooseUsImg2 from "./assets/team.png";
+import WhyChooseUsImg3 from "./assets/gears.png";
+import WhyChooseUsImg4 from "./assets/favorites.png";
 
 import { ServicesCard } from "./components/ServicesCard";
 import { WhyChooseUsCard } from "./components/WhyChooseUsCard";
@@ -30,18 +30,6 @@ function App() {
     <div className="main-1 bg-[#f3f3f3] w-[100%] flex justify-center items-center z-0">
       {/* ==MAIN 2==  */}
       <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         {/* NAVIGATION BAR */}
         <div className=" bg-white w-[100%] py-4 pt-6 px-20 flex justify-between sticky top-0 z-[80]">
           {/* LOGO */}
@@ -65,22 +53,6 @@ function App() {
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* HERO SECTION */}
         <div className="w-[100%] h-[90vh] flex items-center py-4 px-20 relative">
           {/* HERO SECTION WRITING SUPER BOX */}
@@ -88,7 +60,10 @@ function App() {
             {/* PRECISION IN NETWORKING */}
             <div className=" text-6xl font-bold">
               <h1>
-                Precision In <span className=" text-[#383DAD]"><span className=" text-[#FF3131]">N</span>etworking</span>
+                Precision In{" "}
+                <span className=" text-[#383DAD]">
+                  <span className=" text-[#FF3131]">N</span>etworking
+                </span>
               </h1>
             </div>
 
@@ -128,19 +103,6 @@ function App() {
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* ABOUT US SECTION */}
         <div className="flex items-center justify-between py-20 px-20 relative ">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
@@ -174,22 +136,6 @@ function App() {
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* SERVICES WE PROVIDE */}
         <div className="flex flex-col py-20 px-20 relative ">
           {/* SERVICES SECTION WRITING SUPER BOX */}
@@ -212,7 +158,6 @@ function App() {
           {/* GRID FOR CARDS */}
           <div className=" py-20">
             <div className=" grid grid-cols-3 grid-flow-row gap-[4.5rem]">
-
               {/* CARD 1 */}
               <ServicesCard
                 img={ServiceSectionImg1}
@@ -271,64 +216,108 @@ Ensuring complete coverage of all critical areas for enhanced security.
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
         {/* WHY CHOOSE US */}
         <div className="flex flex-col py-20 px-20 relative ">
-
           {/* WHY CHOOSE US WRITING SUPER BOX */}
           <div className="w-[45rem] mb-12">
-
             {/* HEADING */}
-            <h1 className=" text-5xl font-bold mb-2">Why <span className=" text-[#383DAD]">Choose Us</span></h1>
+            <h1 className=" text-5xl font-bold mb-2">
+              Why <span className=" text-[#383DAD]">Choose Us</span>
+            </h1>
 
             {/* TEXT */}
-            <p className="text-xl">Our approach is simple—become a partner in our clients' challenges and work together to create sustainable, long-term solutions. With LaseTech, you’re not just choosing a service provider; you’re gaining a dedicated partner committed to helping you succeed.</p>
-
+            <p className="text-xl">
+              Our approach is simple—become a partner in our clients' challenges
+              and work together to create sustainable, long-term solutions. With
+              LaseTech, you’re not just choosing a service provider; you’re
+              gaining a dedicated partner committed to helping you succeed.
+            </p>
           </div>
-
-
 
           {/* WHY CHOOSE US SECTION GRID FOR CARDS */}
           <div className=" felx flex-col">
-
-
             {/* THE FIRST ROW */}
-              <div className=" flex justify-between mb-8">
-                  <WhyChooseUsCard img={WhyChooseUsImg1} heading="Proven Expertise" text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."/>
-                  <WhyChooseUsCard img={WhyChooseUsImg2} heading="Trusted by Industry Leaders" text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."/>
-              </div>
+            <div className=" flex justify-between mb-8">
+              <WhyChooseUsCard
+                img={WhyChooseUsImg1}
+                heading="Proven Expertise"
+                text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."
+              />
+              <WhyChooseUsCard
+                img={WhyChooseUsImg2}
+                heading="Trusted by Industry Leaders"
+                text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."
+              />
+            </div>
 
             {/* THE SECOND ROW */}
             <div className=" flex justify-between">
-                  <WhyChooseUsCard img={WhyChooseUsImg3} heading="Proven Expertise" text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."/>
-                  <WhyChooseUsCard img={WhyChooseUsImg4} heading="Trusted by Industry Leaders" text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."/>
-              </div>
-
-
-
+              <WhyChooseUsCard
+                img={WhyChooseUsImg3}
+                heading="Proven Expertise"
+                text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."
+              />
+              <WhyChooseUsCard
+                img={WhyChooseUsImg4}
+                heading="Trusted by Industry Leaders"
+                text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."
+              />
+            </div>
           </div>
-
         </div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
         {/* CONTACT US */}
-        <div>{/* CONTACT US HEADING */}</div>
+        <div className="flex justify-between py-20 px-20 relative ">
+
+
+          {/* CONTACT US PART 1 */}
+          <div className=" w-[30rem] h-[20rem]">
+            {/* CONTACT US HEADING */}
+            <h1 className=" text-8xl font-bold">Contact <span className=" text-[#383DAD]">Us</span></h1>
+
+            {/* WRITING BELOW THE CONTACT US SECTION */}
+            <div className=" w-[100%] flex justify-end text-xl">
+            <p className=" mr-6">Your Business Deserves the Best—<span className=" text-[#FF3131]">Let’s Chat!</span></p>
+            </div>
+          </div>
+
+
+          {/* CONTACT US PART 2 */}
+          <div className=" flex flex-col text-xl relative right-[10rem] top-[2rem]">
+              {/* MOBILE */}
+                <p><span className=" font-bold">Mobile</span> : 7488572581</p>
+
+
+              {/* EMAIL */}
+              <p><span className=" font-bold">E-mail</span> : rohanlasetek@gmail.com</p>
+
+              <br />
+
+              {/* ADDRESS */}
+              <p className=" text-2xl font-bold">Lase Tek</p>
+              <p>410, New Layout</p>
+              <p>Sitaramdera, P.O. Agrico</p>
+              <p>Jamshedpur, Jharkand</p>
+              <p>India - 8310 009</p>
+          </div>
+
+        </div>
 
         {/* FOOTER */}
-        <div></div>
+        <div className=" w-[100%] h-[10rem] bg-black"></div>
       </div>
       {/* END OF ==MAIN-2== */}
     </div>
