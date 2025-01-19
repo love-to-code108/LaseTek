@@ -2,14 +2,25 @@ import "./App.css";
 import logo from "./assets/Vector-1.svg";
 import HeroSectionImg1 from "./assets/networking2 1.png";
 import HeroSectionImg2CCTV from "./assets/cctv4 1.png";
+
 import aboutUsSectionImg from "./assets/networking8 1.png";
+
+// SERVICE SECTION IMAGES
 import ServiceSectionImg2 from "./assets/networking7 1.png";
 import ServiceSectionImg1 from "./assets/unsplash1 1.png";
 import ServiceSectionImg3 from "./assets/networking4 1.png";
 import ServiceSectionImg4 from "./assets/cctv6 1.png";
 import ServiceSectionImg5 from "./assets/cctv5 2.png";
 import ServiceSectionImg6 from "./assets/cctv3 1.png";
+
+// WHY CHOOSE US IMAGES
+import WhyChooseUsImg1 from "./assets/trophy.png"
+import WhyChooseUsImg2 from "./assets/team.png"
+import WhyChooseUsImg3 from "./assets/gears.png"
+import WhyChooseUsImg4 from "./assets/favorites.png"
+
 import { ServicesCard } from "./components/ServicesCard";
+import { WhyChooseUsCard } from "./components/WhyChooseUsCard";
 
 function App() {
   // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
@@ -275,7 +286,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
         <div className="flex flex-col py-20 px-20 relative ">
 
           {/* WHY CHOOSE US WRITING SUPER BOX */}
-          <div className="w-[45rem]">
+          <div className="w-[45rem] mb-12">
 
             {/* HEADING */}
             <h1 className=" text-5xl font-bold mb-2">Why <span className=" text-[#383DAD]">Choose Us</span></h1>
@@ -288,6 +299,24 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
           {/* WHY CHOOSE US SECTION GRID FOR CARDS */}
+          <div className=" felx flex-col">
+
+
+            {/* THE FIRST ROW */}
+              <div className=" flex justify-between mb-8">
+                  <WhyChooseUsCard img={WhyChooseUsImg1} heading="Proven Expertise" text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."/>
+                  <WhyChooseUsCard img={WhyChooseUsImg2} heading="Trusted by Industry Leaders" text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."/>
+              </div>
+
+            {/* THE SECOND ROW */}
+            <div className=" flex justify-between">
+                  <WhyChooseUsCard img={WhyChooseUsImg3} heading="Proven Expertise" text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."/>
+                  <WhyChooseUsCard img={WhyChooseUsImg4} heading="Trusted by Industry Leaders" text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."/>
+              </div>
+
+
+
+          </div>
 
         </div>
 
