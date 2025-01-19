@@ -3,7 +3,12 @@ import logo from "./assets/Vector-1.svg";
 import HeroSectionImg1 from "./assets/networking2 1.png";
 import HeroSectionImg2CCTV from "./assets/cctv4 1.png";
 import aboutUsSectionImg from "./assets/networking8 1.png";
-import ServiceSectionImg1 from "./assets/networking7 1.png";
+import ServiceSectionImg2 from "./assets/networking7 1.png";
+import ServiceSectionImg1 from "./assets/unsplash1 1.png";
+import ServiceSectionImg3 from "./assets/networking4 1.png";
+import ServiceSectionImg4 from "./assets/cctv6 1.png";
+import ServiceSectionImg5 from "./assets/cctv5 2.png";
+import ServiceSectionImg6 from "./assets/cctv3 1.png";
 import { ServicesCard } from "./components/ServicesCard";
 
 function App() {
@@ -184,7 +189,7 @@ function App() {
             </h1>
 
             {/* OTHER TEXT */}
-            <p>
+            <p className="text-xl">
               We take pride in being trusted partners to industry leaders,
               including Tata Steel Ltd and many others across multiple
               locations. Our partnerships with global technology providers like
@@ -195,21 +200,9 @@ function App() {
 
           {/* GRID FOR CARDS */}
           <div className=" py-20">
-            <div className=" grid grid-rows-2 grid-flow-col gap-[4.5rem]">
-              <ServicesCard
-                img={ServiceSectionImg1}
-                heading="Network Design and Consultant"
-                text="Comprehensive assessment of client requirements to design optimal network solutions.
-Tailored network infrastructure planning for scalability and efficiency.
-Consultation on selecting the best technologies and equipment."
-              />
-              <ServicesCard
-                img={ServiceSectionImg1}
-                heading="Network Design and Consultant"
-                text="Comprehensive assessment of client requirements to design optimal network solutions.
-Tailored network infrastructure planning for scalability and efficiency.
-Consultation on selecting the best technologies and equipment."
-              />
+            <div className=" grid grid-cols-3 grid-flow-row gap-[4.5rem]">
+
+              {/* CARD 1 */}
               <ServicesCard
                 img={ServiceSectionImg1}
                 heading="Network Design and Consultant"
@@ -218,27 +211,50 @@ Tailored network infrastructure planning for scalability and efficiency.
 Consultation on selecting the best technologies and equipment."
               />
 
+              {/* CARD 2 */}
+              <ServicesCard
+                img={ServiceSectionImg2}
+                heading="Network Installation and Configuration"
+                text="Professional installation of routers, switches, and other network devices.
+Precise configuration of network hardware for seamless integration.
+Implementation of secure and efficient network protocols."
+              />
 
+              {/* CARD 3 */}
               <ServicesCard
-                img={ServiceSectionImg1}
-                heading="Network Design and Consultant"
-                text="Comprehensive assessment of client requirements to design optimal network solutions.
-Tailored network infrastructure planning for scalability and efficiency.
-Consultation on selecting the best technologies and equipment."
+                img={ServiceSectionImg3}
+                heading="Network Optimization and Device Integration"
+                text="Connecting and integrating all network devices for smooth communication.
+Troubleshooting and optimizing existing networks for peak performance.
+Ensuring reliability, speed, and security across the entire network infrastructure."
               />
+
+              {/* CARD 4 */}
               <ServicesCard
-                img={ServiceSectionImg1}
-                heading="Network Design and Consultant"
-                text="Comprehensive assessment of client requirements to design optimal network solutions.
-Tailored network infrastructure planning for scalability and efficiency.
-Consultation on selecting the best technologies and equipment."
+                img={ServiceSectionImg4}
+                heading="CCTV System Design and Planning"
+                text="Assessment of site requirements to design a comprehensive surveillance plan.
+Strategic placement recommendations for maximum coverage and efficiency.
+Consultation on selecting the best cameras and systems for client needs."
               />
+
+              {/* CARD 5 */}
               <ServicesCard
-                img={ServiceSectionImg1}
-                heading="Network Design and Consultant"
-                text="Comprehensive assessment of client requirements to design optimal network solutions.
-Tailored network infrastructure planning for scalability and efficiency.
-Consultation on selecting the best technologies and equipment."
+                img={ServiceSectionImg5}
+                heading="CCTV Installation and Setup"
+                text="Professional installation of CCTV cameras, NVRs, and related equipment.
+Secure wiring and integration with existing infrastructure.
+Testing and calibration to ensure seamless operation."
+              />
+
+              {/* CARD 6 */}
+              <ServicesCard
+                img={ServiceSectionImg6}
+                heading="CCTV Configuration and Management"
+                text="Expert configuration of camera settings for optimal performance.
+Regular monitoring, maintenance, and troubleshooting of CCTV systems.
+Ensuring complete coverage of all critical areas for enhanced security.
+"
               />
             </div>
           </div>

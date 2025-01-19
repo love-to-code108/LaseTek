@@ -5,7 +5,7 @@ export const ServicesCard = (props) => {
 
 
   return (
-    <div className=" flex flex-col items-center w-[469px] h-[588px] px-8 py-8 shadow-2xl">
+    <div className=" flex flex-col items-center w-[469px] h-[588px] px-6 py-6 border-2 border-black shadow-lg">
 
       {/* IMAGE */}
       <div className=" mb-8">
