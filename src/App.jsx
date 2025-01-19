@@ -2,6 +2,7 @@ import "./App.css";
 import logo from "./assets/Vector-1.svg"
 import HeroSectionImg1 from "./assets/networking2 1.png"
 import HeroSectionImg2CCTV from "./assets/cctv4 1.png"
+import aboutUsSectionImg from "./assets/networking8 1.png"
 
 
 
@@ -126,22 +127,25 @@ function App() {
 
 
 
+
+
+
       {/* ABOUT US SECTION */}
-        <div>
+        <div className="flex items-center justify-between py-20 px-20 relative ">
 
           {/*ABOUT US SECTION WRITING SUPER BOX */}
-          <div>
+          <div className=" w-[45rem]">
 
 
             {/* HEADING */}
-            <div>
-              <h1>About <span>Us</span></h1>
+            <div className=" mb-2">
+              <h1 className=" text-5xl font-bold">About <span className=" text-[#383DAD]">Us</span></h1>
             </div>
 
 
             {/* THE TEXT SECTION */}
             <div>
-              <p>At the heart of LaseTech are our core values: integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services but also in fostering public trust and conducting ourselves as responsible corporate citizens.
+              <p className=" text-xl">At the heart of LaseTech are our core values: integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services but also in fostering public trust and conducting ourselves as responsible corporate citizens.
               Our approach is simple—become a partner in our clients' challenges and work together to create sustainable, long-term solutions. With LaseTech, you’re not just choosing a service provider; you’re gaining a dedicated partner committed to helping you succeed.</p>
             </div>
 
@@ -149,9 +153,18 @@ function App() {
 
 
           {/* ABOUT US SECTION PICTURE 1 */}
-
+          <div>
+            <img src={aboutUsSectionImg} alt="" />
+          </div>
 
         </div>
+
+
+
+
+
+
+
 
 
 
@@ -160,10 +173,24 @@ function App() {
       <div>
 
         {/* SERVICES SECTION WRITING SUPER BOX */}
+        <div>
+
+
+          {/* HEADING */}
+
+
+          {/* OTHER TEXT */}
+
+
+
+        </div>
+
 
 
         {/* GRID FOR CARDS */}
-
+        <div>
+          
+        </div>
 
       </div>
 
