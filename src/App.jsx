@@ -16,7 +16,7 @@ function App() {
   return (
     // THE MAIN GREY PAGE THE LOWEST LEVEL
     // ==MAIN 1==
-    <div className="main-1 bg-gray-600 w-[100%] flex justify-center items-center z-0">
+    <div className="main-1 bg-[#f3f3f3] w-[100%] flex justify-center items-center z-0">
       {/* ==MAIN 2==  */}
       <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
         
@@ -272,11 +272,28 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* WHY CHOOSE US */}
-        <div>
+        <div className="flex flex-col py-20 px-20 relative ">
+
           {/* WHY CHOOSE US WRITING SUPER BOX */}
+          <div className="w-[45rem]">
+
+            {/* HEADING */}
+            <h1 className=" text-5xl font-bold mb-2">Why <span className=" text-[#383DAD]">Choose Us</span></h1>
+
+            {/* TEXT */}
+            <p className="text-xl">Our approach is simple—become a partner in our clients' challenges and work together to create sustainable, long-term solutions. With LaseTech, you’re not just choosing a service provider; you’re gaining a dedicated partner committed to helping you succeed.</p>
+
+          </div>
+
+
 
           {/* WHY CHOOSE US SECTION GRID FOR CARDS */}
+
         </div>
+
+
+
+
 
         {/* CONTACT US */}
         <div>{/* CONTACT US HEADING */}</div>
