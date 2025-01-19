@@ -1,5 +1,5 @@
 import "./App.css";
-
+import logo from "./assets/Vector-1.svg"
 
 
 
@@ -20,26 +20,37 @@ function App() {
 
   // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
   return (
-    // THE MAIN GREY PAGE THE LOWEST LEVEL  ==MAIN 1==
-    <div className="main-1 bg-gray-600 w-[100vw] h-[100vh] flex justify-center items-center z-0">
+    // THE MAIN GREY PAGE THE LOWEST LEVEL  
+    // ==MAIN 1==
+    <div className="main-1 bg-gray-600 w-[100%] flex justify-center items-center z-0">
+
 
       {/* ==MAIN 2==  */}
       <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
 
       
       {/* NAVIGATION BAR */}
-        <div className=" bg-red-600 w-[100%] h-[8rem]">
+        <div className=" bg-white w-[100%] py-4 px-10 flex justify-between drop-shadow">
 
 
         {/* LOGO */}
           <div>
-            <img src="" alt="" />
+            <img src={logo} alt="" />
           </div>
 
         {/* THE SECTIONS */}
+        <div className="flex items-center justify-evenly text-2xl w-[686px] ">
+            <button className="navBarSections">Home</button>
+            <button className="navBarSections">About Us</button>
+            <button className="navBarSections">Services</button>
+            <button className="navBarSections">Why Choose Us</button>
+        </div>
 
 
         {/* CONTACT US BUTTON */}
+        <div className=" flex justify-center items-center text-3xl ">
+          <button className=" px-4 py-3 border-2 border-black ">Contact Us</button>
+        </div>
 
         </div>
 

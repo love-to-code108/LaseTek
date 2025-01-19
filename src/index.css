@@ -2,4 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: NeueMontreal-regular;
+    src: url(./assets/Fonts/NeueMontreal-Regular.otf);
+}
+
+*{
+    font-family: NeueMontreal-regular;
+}
+
+/* ======== NAVIGATION BAR ========= */
+.navBarSections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    height: 2rem;
+}
+
 
