@@ -29,8 +29,17 @@ function App() {
       <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
 
       
+
+
+
+
+
+
+
+
+
       {/* NAVIGATION BAR */}
-        <div className=" bg-white w-[100%] py-4 px-10 flex justify-between drop-shadow">
+        <div className=" bg-white w-[100%] py-4 px-10 flex justify-between drop-shadow sticky top-0">
 
 
         {/* LOGO */}
@@ -57,11 +66,40 @@ function App() {
 
 
 
+
+
+
+
+
+
+
       {/* HERO SECTION */}
-      <div className="w-[100%] h-[100vh] ">
+      <div className="w-[100%] h-[90vh]">
 
           {/* HERO SECTION WRITING SUPER BOX */}
+          <div>
 
+            {/* PRECISION IN NETWORKING */}
+            <div>
+              <h1>Precision In Networking</h1>
+            </div>
+
+
+            {/* EXCELLENCE IN SECURITY */}
+            <div>
+              <h1>Excellence In Security</h1>
+            </div>
+
+            {/* THE REST OF THE TEXT */}
+            <div>
+              <p>Building lasting partnerships through integrity, innovation, and unmatched service—<span>trusted by industry leaders like Tata Steel</span> and powered by global technology brands</p>
+            </div>
+
+            {/* THE CONTACT US BUTTON */}
+            <div>
+              <button>Contact Us</button>
+            </div>
+          </div>
 
           {/* PICTURE 1 */}
 

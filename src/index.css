@@ -11,6 +11,10 @@
     font-family: NeueMontreal-regular;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* ======== NAVIGATION BAR ========= */
 .navBarSections{
     display: flex;
