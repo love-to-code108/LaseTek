@@ -1,13 +1,48 @@
-import './App.css'
+import "./App.css";
 
 function App() {
-  
-
+  // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
   return (
-    <div className=' text-4xl'>
-      Hello world
-    </div>
-  )
+    // THE MAIN GREY PAGE THE LOWEST LEVEL  ==MAIN 1==
+    <div className="main-1">
+
+      {/* ==MAIN 2==  */}
+      <div className="main-2">
+
+      
+      {/* NAVIGATION BAR */}
+        <div>
+
+        </div>
+
+      {/* HERO SECTION */}
+
+      {/* ABOUT US SECTION */}
+
+      {/* SERVICES WE PROVIDE */}
+
+      {/* WHY CHOOSE US */}
+
+      {/* CONTACT US */}
+
+      {/* FOOTER */}
+
+
+
+
+
+
+
+
+
+
+      </div> 
+      {/* END OF ==MAIN-2== */}
+
+
+    </div> 
+    // END OF ==MAIN-1==
+  );
 }
 
-export default App
+export default App;
