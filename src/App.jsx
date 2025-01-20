@@ -23,13 +23,34 @@ import { ServicesCard } from "./components/ServicesCard";
 import { WhyChooseUsCard } from "./components/WhyChooseUsCard";
 
 function App() {
+
+
+
+
+
+
+
+
   // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
   return (
+
+
+
     // THE MAIN GREY PAGE THE LOWEST LEVEL
     // ==MAIN 1==
     <div className="main-1 bg-[#f3f3f3] w-[100%] flex justify-center items-center z-0">
+
+
+
+
+
       {/* ==MAIN 2==  */}
       <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
+
+
+
+
+
         {/* NAVIGATION BAR */}
         <div className=" bg-white w-[100%] py-4 pt-6 px-20 flex justify-between sticky top-0 z-[80]">
           {/* LOGO */}
@@ -52,6 +73,19 @@ function App() {
             </button>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {/* HERO SECTION */}
         <div className="w-[100%] h-[90vh] flex items-center py-4 px-20 relative">
@@ -103,7 +137,26 @@ function App() {
           </div>
         </div>
 
-        {/* ABOUT US SECTION */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* ======= ABOUT US SECTION ======== */}
         <div className="flex items-center justify-between py-20 px-20 relative ">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
           <div className=" w-[45rem]">
@@ -135,6 +188,20 @@ function App() {
             <img src={aboutUsSectionImg} alt="" />
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {/* SERVICES WE PROVIDE */}
         <div className="flex flex-col py-20 px-20 relative ">
@@ -215,6 +282,22 @@ Ensuring complete coverage of all critical areas for enhanced security.
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {/* WHY CHOOSE US */}
         <div className="flex flex-col py-20 px-20 relative ">
@@ -315,6 +398,13 @@ Ensuring complete coverage of all critical areas for enhanced security.
           </div>
 
         </div>
+
+
+
+
+
+
+
 
         {/* FOOTER */}
         <div className=" w-[100%] h-[10rem] bg-black"></div>
