@@ -49,3 +49,16 @@ html {
     }
 }
 
+@media (max-width:1500px) {
+    .heroSection-pic2{
+        display: none;
+    }
+
+    .heroSection-pic1{
+        position: absolute;
+        right: 2rem !important;
+        top: 20% !important;
+        
+    }
+}
+
