@@ -1,5 +1,5 @@
 import "./App.css";
-import logo from "./assets/Vector-1.svg";
+import logo from "./assets/Vector-1.png";
 import HeroSectionImg1 from "./assets/networking2 1.png";
 import HeroSectionImg2CCTV from "./assets/cctv4 1.png";
 
@@ -218,7 +218,7 @@ function App() {
                 true success lies not only in providing exceptional products and
                 services but also in fostering public trust and conducting
                 ourselves as responsible corporate citizens. Our approach is
-                simple—become a partner in our clients challenges and work
+                simple becoming a partner, in our clients challenges and work
                 together to create sustainable, long-term solutions. With
                 LaseTech, you’re not just choosing a service provider; you’re
                 gaining a dedicated partner committed to helping you succeed.
@@ -434,11 +434,11 @@ Ensuring complete coverage of all critical areas for enhanced security.
           {/* CONTACT US PART 2 */}
           <div className=" flex flex-col text-xl relative right-[10rem] top-[2rem]">
               {/* MOBILE */}
-                <p><span className=" font-bold">Mobile</span> : 7488572581</p>
+                <p><span className=" font-bold">Mobile</span> : +91 - 9955440037</p>
 
 
               {/* EMAIL */}
-              <p><span className=" font-bold">E-mail</span> : rohanlasetek@gmail.com</p>
+              <p><span className=" font-bold">E-mail</span> : rksri@lasetek.in</p>
 
               <br />
 
