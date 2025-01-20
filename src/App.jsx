@@ -6,9 +6,9 @@ import HeroSectionImg2CCTV from "./assets/cctv4 1.png";
 import aboutUsSectionImg from "./assets/networking8 1.png";
 
 // SERVICE SECTION IMAGES
-import ServiceSectionImg2 from "./assets/networking7 1.png";
-import ServiceSectionImg1 from "./assets/unsplash1 1.png";
-import ServiceSectionImg3 from "./assets/networking4 1.png";
+import ServiceSectionImg2 from "./assets/img1.png";
+import ServiceSectionImg1 from "./assets/img2.png";
+import ServiceSectionImg3 from "./assets/img3.png";
 import ServiceSectionImg4 from "./assets/cctv6 1.png";
 import ServiceSectionImg5 from "./assets/cctv5 2.png";
 import ServiceSectionImg6 from "./assets/cctv3 1.png";
