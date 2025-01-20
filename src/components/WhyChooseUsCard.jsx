@@ -2,12 +2,16 @@ import "../index.css";
 
 export const WhyChooseUsCard = (props) => {
   return (
-    <div className=" flex justify-center px-8 py-6 w-[753px] bg-white border-2 border-black shadow-lg">
+    <div className=" flex justify-center px-8 py-6 2xl:w-[753px] bg-white border-2 border-black shadow-lg
+    xl:w-[700px]
+    ">
 
 
       {/* THE IMAGE */}
       <div className=" flex justify-center items-center w-[18rem] mr-4">
-        <img className=" h-[100%] w-[auto] " src={props.img} alt="" />
+        <img className=" 2xl:h-[100%] w-[auto] 
+        
+        " src={props.img} alt="" />
       </div>
 
 

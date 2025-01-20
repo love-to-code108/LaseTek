@@ -52,7 +52,11 @@ function App() {
 
 
         {/* NAVIGATION BAR */}
-        <div className=" bg-white w-[100%] py-4 pt-6 px-20 flex justify-between sticky top-0 z-[80]">
+        <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
+        3xl:px-20
+        2xl:py-4 2xl:pt-6 2xl:px-10 
+         xl:px-8 xl:py-4
+        ">
           {/* LOGO */}
           <div>
             <img src={logo} alt="" />
@@ -88,7 +92,9 @@ function App() {
 
 
         {/* HERO SECTION */}
-        <div className="w-[100%] h-[90vh] flex items-center py-4 px-20 relative">
+        <div className="w-[100%] h-[50rem] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
+        xl:px-8 xl:py-4
+        ">
           {/* HERO SECTION WRITING SUPER BOX */}
           <div className=" ">
             {/* PRECISION IN NETWORKING */}
@@ -127,12 +133,15 @@ function App() {
           </div>
 
           {/* PICTURE 1 */}
-          <div className=" absolute top-[3rem] right-[18rem] z-20">
+          <div className=" absolute top-[3rem] right-[18rem] z-20
+          xl:top-[2rem] xl:right-[16rem]">
             <img src={HeroSectionImg1} alt="" />
           </div>
 
           {/* PICTURE 2 */}
-          <div className=" absolute bottom-[4rem] right-[5rem] z-19">
+          <div className=" absolute bottom-[4rem] 2xl:right-[2.7rem] 3xl:right-[5rem] z-19
+          xl:right-[2rem]
+          ">
             <img src={HeroSectionImg2CCTV} alt="" />
           </div>
         </div>
@@ -157,7 +166,8 @@ function App() {
 
 
         {/* ======= ABOUT US SECTION ======== */}
-        <div className="flex items-center justify-between py-20 px-20 relative ">
+        <div className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
+        xl:px-8">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
           <div className=" w-[45rem]">
             {/* HEADING */}
@@ -204,7 +214,8 @@ function App() {
 
 
         {/* SERVICES WE PROVIDE */}
-        <div className="flex flex-col py-20 px-20 relative ">
+        <div className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        xl:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
           <div className="w-[45rem]">
             {/* HEADING */}
@@ -224,7 +235,8 @@ function App() {
 
           {/* GRID FOR CARDS */}
           <div className=" py-20">
-            <div className=" grid grid-cols-3 grid-flow-row gap-[4.5rem]">
+            <div className=" grid grid-cols-3 grid-flow-row 2xl:gap-[4.5rem]
+            xl:gap-x-4 xl:gap-y-8">
               {/* CARD 1 */}
               <ServicesCard
                 img={ServiceSectionImg1}
@@ -300,7 +312,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* WHY CHOOSE US */}
-        <div className="flex flex-col py-20 px-20 relative ">
+        <div className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        xl:px-8">
           {/* WHY CHOOSE US WRITING SUPER BOX */}
           <div className="w-[45rem] mb-12">
             {/* HEADING */}
@@ -320,7 +333,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
           {/* WHY CHOOSE US SECTION GRID FOR CARDS */}
           <div className=" felx flex-col">
             {/* THE FIRST ROW */}
-            <div className=" flex justify-between mb-8">
+            <div className=" flex justify-between mb-8
+            ">
               <WhyChooseUsCard
                 img={WhyChooseUsImg1}
                 heading="Proven Expertise"
@@ -334,7 +348,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
             </div>
 
             {/* THE SECOND ROW */}
-            <div className=" flex justify-between">
+            <div className=" flex justify-between
+            ">
               <WhyChooseUsCard
                 img={WhyChooseUsImg3}
                 heading="Proven Expertise"
@@ -363,7 +378,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* CONTACT US */}
-        <div className="flex justify-between py-20 px-20 relative ">
+        <div className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8">
 
 
           {/* CONTACT US PART 1 */}
