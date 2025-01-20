@@ -21,8 +21,34 @@ import WhyChooseUsImg4 from "./assets/favorites.png";
 
 import { ServicesCard } from "./components/ServicesCard";
 import { WhyChooseUsCard } from "./components/WhyChooseUsCard";
+import { useRef } from "react";
 
 function App() {
+  const Home = useRef(null);
+  const AboutUs = useRef(null);
+  const Services = useRef(null);
+  const WhyChooseUs = useRef(null);
+  const ContactUs = useRef(null);
+
+
+  const scrollToTop =  () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  const scrollToHome = () => {
+    Home.current.scrollIntoView({ top: 0,behavior: "smooth" });
+  };
+  const scrollToAboutUs = () => {
+    AboutUs.current.scrollIntoView({ top: 0,behavior: "smooth" });
+  };
+  const scrollToServicves = () => {
+    Services.current.scrollIntoView({ top: 0,behavior: "smooth" });
+  };
+  const scrollToWhyChooseUs = () => {
+    WhyChooseUs.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToContactUs = () => {
+    ContactUs.current.scrollIntoView({ behavior: "smooth" });
+  };
 
 
 
@@ -59,21 +85,21 @@ function App() {
          
         ">
           {/* LOGO */}
-          <div>
+          <div onClick={scrollToTop} className=" cursor-pointer">
             <img src={logo} alt="" />
           </div>
 
           {/* THE SECTIONS */}
           <div className="flex items-center justify-evenly text-2xl w-[686px] ">
-            <button className="navBarSections">Home</button>
-            <button className="navBarSections">About Us</button>
-            <button className="navBarSections">Services</button>
-            <button className="navBarSections">Why Choose Us</button>
+            <button onClick={scrollToHome} className="navBarSections">Home</button>
+            <button onClick={scrollToAboutUs} className="navBarSections">About Us</button>
+            <button onClick={scrollToServicves} className="navBarSections">Services</button>
+            <button onClick={scrollToWhyChooseUs} className="navBarSections">Why Choose Us</button>
           </div>
 
           {/* CONTACT US BUTTON */}
           <div className=" flex justify-center items-center text-3xl ">
-            <button className=" px-4 py-3 border-2 border-black ">
+            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black ">
               Contact Us
             </button>
           </div>
@@ -93,7 +119,7 @@ function App() {
 
 
         {/* HERO SECTION */}
-        <div className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
+        <div ref={Home} className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
         md:px-8 md:py-4
         heroSection-main
         ">
@@ -171,7 +197,7 @@ function App() {
 
 
         {/* ======= ABOUT US SECTION ======== */}
-        <div className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={AboutUs} className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
@@ -221,7 +247,7 @@ function App() {
 
 
         {/* SERVICES WE PROVIDE */}
-        <div className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={Services} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
@@ -322,7 +348,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* WHY CHOOSE US */}
-        <div className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={WhyChooseUs} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/* WHY CHOOSE US WRITING SUPER BOX */}
@@ -389,7 +415,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* CONTACT US */}
-        <div className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8
+        <div ref={ContactUs} className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8
         md:px-8">
 
 
