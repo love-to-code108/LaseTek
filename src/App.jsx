@@ -55,7 +55,8 @@ function App() {
         <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
         3xl:px-20
         2xl:py-4 2xl:pt-6 2xl:px-10 
-         xl:px-8 xl:py-4
+         md:px-8 md:py-4
+         
         ">
           {/* LOGO */}
           <div>
@@ -93,7 +94,7 @@ function App() {
 
         {/* HERO SECTION */}
         <div className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
-        xl:px-8 xl:py-4
+        md:px-8 md:py-4
         heroSection-main
         ">
           {/* HERO SECTION WRITING SUPER BOX */}
@@ -171,9 +172,11 @@ function App() {
 
         {/* ======= ABOUT US SECTION ======== */}
         <div className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
-        xl:px-8">
+        xl:px-8
+        md:px-8">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
-          <div className=" w-[45rem]">
+          <div className=" w-[45rem]
+          md:w-[38rem]">
             {/* HEADING */}
             <div className=" mb-2">
               <h1 className=" text-5xl font-bold">
@@ -199,7 +202,7 @@ function App() {
 
           {/* ABOUT US SECTION PICTURE 1 */}
           <div>
-            <img className=" xl:w-[35rem]" src={aboutUsSectionImg} alt="" />
+            <img className=" xl:w-[35rem] md:w-[34rem]" src={aboutUsSectionImg} alt="" />
           </div>
         </div>
 
@@ -219,7 +222,8 @@ function App() {
 
         {/* SERVICES WE PROVIDE */}
         <div className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
-        xl:px-8">
+        xl:px-8
+        md:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
           <div className="w-[45rem]">
             {/* HEADING */}
@@ -240,7 +244,9 @@ function App() {
           {/* GRID FOR CARDS */}
           <div className=" py-20">
             <div className=" grid grid-cols-3 grid-flow-row 2xl:gap-[4.5rem]
-            xl:gap-x-4 xl:gap-y-8">
+            xl:gap-x-4 xl:gap-y-8
+            md:justify-center md:content-center
+            md:gap-y-8">
               {/* CARD 1 */}
               <ServicesCard
                 img={ServiceSectionImg1}
@@ -317,7 +323,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
         {/* WHY CHOOSE US */}
         <div className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
-        xl:px-8">
+        xl:px-8
+        md:px-8">
           {/* WHY CHOOSE US WRITING SUPER BOX */}
           <div className="w-[45rem] mb-12">
             {/* HEADING */}
@@ -382,7 +389,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* CONTACT US */}
-        <div className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8">
+        <div className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8
+        md:px-8">
 
 
           {/* CONTACT US PART 1 */}
