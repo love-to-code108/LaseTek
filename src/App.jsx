@@ -389,13 +389,13 @@ Ensuring complete coverage of all critical areas for enhanced security.
             ">
               <WhyChooseUsCard
                 img={WhyChooseUsImg3}
-                heading="Proven Expertise"
-                text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."
+                heading="Tailored Solutions"
+                text="We understand that every business is unique. That’s why we offer customized networking and security solutions designed to meet your specific needs."
               />
               <WhyChooseUsCard
                 img={WhyChooseUsImg4}
-                heading="Trusted by Industry Leaders"
-                text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."
+                heading="Commitment to Excellence"
+                text="As an MSME-certified company, we are dedicated to delivering top-quality services with a focus on precision, innovation, and timely completion of projects."
               />
             </div>
           </div>
