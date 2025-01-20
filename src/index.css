@@ -26,3 +26,26 @@ html {
 }
 
 
+
+
+
+
+/* ========= HERO SECTION ========== */
+@media (max-height:816px) {
+    
+    .heroSection-pic2{
+        display: none;
+    }
+    .heroSection-pic1{
+        position: absolute;
+        right: 2rem !important;
+        top: 20% !important;
+        
+
+    }
+
+    .heroSection-main{
+        height: 85vh;
+    }
+}
+

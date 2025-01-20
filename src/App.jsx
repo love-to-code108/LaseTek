@@ -92,8 +92,9 @@ function App() {
 
 
         {/* HERO SECTION */}
-        <div className="w-[100%] h-[50rem] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
+        <div className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
         xl:px-8 xl:py-4
+        heroSection-main
         ">
           {/* HERO SECTION WRITING SUPER BOX */}
           <div className=" ">
@@ -133,14 +134,17 @@ function App() {
           </div>
 
           {/* PICTURE 1 */}
-          <div className=" absolute top-[3rem] right-[18rem] z-20
-          xl:top-[2rem] xl:right-[16rem]">
+          <div className=" absolute 2xl:top-[3rem] 2xl:right-[18rem] z-20
+          xl:top-[2rem] xl:right-[16rem]
+          heroSection-pic1
+           ">
             <img src={HeroSectionImg1} alt="" />
           </div>
 
           {/* PICTURE 2 */}
           <div className=" absolute bottom-[4rem] 2xl:right-[2.7rem] 3xl:right-[5rem] z-19
           xl:right-[2rem]
+          heroSection-pic2
           ">
             <img src={HeroSectionImg2CCTV} alt="" />
           </div>
@@ -195,7 +199,7 @@ function App() {
 
           {/* ABOUT US SECTION PICTURE 1 */}
           <div>
-            <img src={aboutUsSectionImg} alt="" />
+            <img className=" xl:w-[35rem]" src={aboutUsSectionImg} alt="" />
           </div>
         </div>
 
