@@ -21,40 +21,108 @@ import WhyChooseUsImg4 from "./assets/favorites.png";
 
 import { ServicesCard } from "./components/ServicesCard";
 import { WhyChooseUsCard } from "./components/WhyChooseUsCard";
+import { useRef } from "react";
 
 function App() {
+  const Home = useRef(null);
+  const AboutUs = useRef(null);
+  const Services = useRef(null);
+  const WhyChooseUs = useRef(null);
+  const ContactUs = useRef(null);
+
+
+  const scrollToTop =  () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  const scrollToHome = () => {
+    Home.current.scrollIntoView({ top: 0,behavior: "smooth" });
+  };
+  const scrollToAboutUs = () => {
+    AboutUs.current.scrollIntoView({ top: 0,behavior: "smooth" });
+  };
+  const scrollToServicves = () => {
+    Services.current.scrollIntoView({ top: 0,behavior: "smooth" });
+  };
+  const scrollToWhyChooseUs = () => {
+    WhyChooseUs.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToContactUs = () => {
+    ContactUs.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+
+
+
+
+
+
+
   // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
   return (
+
+
+
     // THE MAIN GREY PAGE THE LOWEST LEVEL
     // ==MAIN 1==
     <div className="main-1 bg-[#f3f3f3] w-[100%] flex justify-center items-center z-0">
+
+
+
+
+
       {/* ==MAIN 2==  */}
       <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
+
+
+
+
+
         {/* NAVIGATION BAR */}
-        <div className=" bg-white w-[100%] py-4 pt-6 px-20 flex justify-between sticky top-0 z-[80]">
+        <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
+        3xl:px-20
+        2xl:py-4 2xl:pt-6 2xl:px-10 
+         md:px-8 md:py-4
+         
+        ">
           {/* LOGO */}
-          <div>
+          <div onClick={scrollToTop} className=" cursor-pointer">
             <img src={logo} alt="" />
           </div>
 
           {/* THE SECTIONS */}
           <div className="flex items-center justify-evenly text-2xl w-[686px] ">
-            <button className="navBarSections">Home</button>
-            <button className="navBarSections">About Us</button>
-            <button className="navBarSections">Services</button>
-            <button className="navBarSections">Why Choose Us</button>
+            <button onClick={scrollToHome} className="navBarSections">Home</button>
+            <button onClick={scrollToAboutUs} className="navBarSections">About Us</button>
+            <button onClick={scrollToServicves} className="navBarSections">Services</button>
+            <button onClick={scrollToWhyChooseUs} className="navBarSections">Why Choose Us</button>
           </div>
 
           {/* CONTACT US BUTTON */}
           <div className=" flex justify-center items-center text-3xl ">
-            <button className=" px-4 py-3 border-2 border-black ">
+            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black ">
               Contact Us
             </button>
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/* HERO SECTION */}
-        <div className="w-[100%] h-[90vh] flex items-center py-4 px-20 relative">
+        <div ref={Home} className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
+        md:px-8 md:py-4
+        heroSection-main
+        ">
           {/* HERO SECTION WRITING SUPER BOX */}
           <div className=" ">
             {/* PRECISION IN NETWORKING */}
@@ -93,20 +161,48 @@ function App() {
           </div>
 
           {/* PICTURE 1 */}
-          <div className=" absolute top-[3rem] right-[18rem] z-20">
+          <div className=" absolute 2xl:top-[3rem] 2xl:right-[18rem] z-20
+          xl:top-[2rem] xl:right-[16rem]
+          heroSection-pic1
+           ">
             <img src={HeroSectionImg1} alt="" />
           </div>
 
           {/* PICTURE 2 */}
-          <div className=" absolute bottom-[4rem] right-[5rem] z-19">
+          <div className=" absolute bottom-[4rem] 2xl:right-[2.7rem] 3xl:right-[5rem] z-19
+          xl:right-[2rem]
+          heroSection-pic2
+          ">
             <img src={HeroSectionImg2CCTV} alt="" />
           </div>
         </div>
 
-        {/* ABOUT US SECTION */}
-        <div className="flex items-center justify-between py-20 px-20 relative ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* ======= ABOUT US SECTION ======== */}
+        <div ref={AboutUs} className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
+        xl:px-8
+        md:px-8">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
-          <div className=" w-[45rem]">
+          <div className=" w-[45rem]
+          md:w-[38rem]">
             {/* HEADING */}
             <div className=" mb-2">
               <h1 className=" text-5xl font-bold">
@@ -132,12 +228,28 @@ function App() {
 
           {/* ABOUT US SECTION PICTURE 1 */}
           <div>
-            <img src={aboutUsSectionImg} alt="" />
+            <img className=" xl:w-[35rem] md:w-[34rem]" src={aboutUsSectionImg} alt="" />
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/* SERVICES WE PROVIDE */}
-        <div className="flex flex-col py-20 px-20 relative ">
+        <div ref={Services} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        xl:px-8
+        md:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
           <div className="w-[45rem]">
             {/* HEADING */}
@@ -157,7 +269,10 @@ function App() {
 
           {/* GRID FOR CARDS */}
           <div className=" py-20">
-            <div className=" grid grid-cols-3 grid-flow-row gap-[4.5rem]">
+            <div className=" grid grid-cols-3 grid-flow-row 2xl:gap-[4.5rem]
+            xl:gap-x-4 xl:gap-y-8
+            md:justify-center md:content-center
+            md:gap-y-8">
               {/* CARD 1 */}
               <ServicesCard
                 img={ServiceSectionImg1}
@@ -216,8 +331,26 @@ Ensuring complete coverage of all critical areas for enhanced security.
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/* WHY CHOOSE US */}
-        <div className="flex flex-col py-20 px-20 relative ">
+        <div ref={WhyChooseUs} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        xl:px-8
+        md:px-8">
           {/* WHY CHOOSE US WRITING SUPER BOX */}
           <div className="w-[45rem] mb-12">
             {/* HEADING */}
@@ -237,7 +370,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
           {/* WHY CHOOSE US SECTION GRID FOR CARDS */}
           <div className=" felx flex-col">
             {/* THE FIRST ROW */}
-            <div className=" flex justify-between mb-8">
+            <div className=" flex justify-between mb-8
+            ">
               <WhyChooseUsCard
                 img={WhyChooseUsImg1}
                 heading="Proven Expertise"
@@ -251,16 +385,17 @@ Ensuring complete coverage of all critical areas for enhanced security.
             </div>
 
             {/* THE SECOND ROW */}
-            <div className=" flex justify-between">
+            <div className=" flex justify-between
+            ">
               <WhyChooseUsCard
                 img={WhyChooseUsImg3}
-                heading="Proven Expertise"
-                text="With over 40 years of cumulative experience, our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."
+                heading="Tailored Solutions"
+                text="We understand that every business is unique. That’s why we offer customized networking and security solutions designed to meet your specific needs."
               />
               <WhyChooseUsCard
                 img={WhyChooseUsImg4}
-                heading="Trusted by Industry Leaders"
-                text="Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."
+                heading="Commitment to Excellence"
+                text="As an MSME-certified company, we are dedicated to delivering top-quality services with a focus on precision, innovation, and timely completion of projects."
               />
             </div>
           </div>
@@ -280,7 +415,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* CONTACT US */}
-        <div className="flex justify-between py-20 px-20 relative ">
+        <div ref={ContactUs} className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8
+        md:px-8">
 
 
           {/* CONTACT US PART 1 */}
@@ -315,6 +451,13 @@ Ensuring complete coverage of all critical areas for enhanced security.
           </div>
 
         </div>
+
+
+
+
+
+
+
 
         {/* FOOTER */}
         <div className=" w-[100%] h-[10rem] bg-black"></div>
