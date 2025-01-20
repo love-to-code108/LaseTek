@@ -1,14 +1,14 @@
 import "./App.css";
-import logo from "./assets/Vector-1.svg";
+import logo from "./assets/Vector-1.png";
 import HeroSectionImg1 from "./assets/networking2 1.png";
 import HeroSectionImg2CCTV from "./assets/cctv4 1.png";
 
 import aboutUsSectionImg from "./assets/networking8 1.png";
 
 // SERVICE SECTION IMAGES
-import ServiceSectionImg2 from "./assets/networking7 1.png";
-import ServiceSectionImg1 from "./assets/unsplash1 1.png";
-import ServiceSectionImg3 from "./assets/networking4 1.png";
+import ServiceSectionImg2 from "./assets/img1.png";
+import ServiceSectionImg1 from "./assets/img2.png";
+import ServiceSectionImg3 from "./assets/img3.png";
 import ServiceSectionImg4 from "./assets/cctv6 1.png";
 import ServiceSectionImg5 from "./assets/cctv5 2.png";
 import ServiceSectionImg6 from "./assets/cctv3 1.png";
@@ -78,7 +78,7 @@ function App() {
 
 
         {/* NAVIGATION BAR */}
-        <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
+        <div className=" bg-white w-[100%] flex justify-between stickyf top-0 z-[80]
         3xl:px-20
         2xl:py-4 2xl:pt-6 2xl:px-10 
          md:px-8 md:py-4
@@ -99,7 +99,7 @@ function App() {
 
           {/* CONTACT US BUTTON */}
           <div className=" flex justify-center items-center text-3xl ">
-            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black ">
+            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white">
               Contact Us
             </button>
           </div>
@@ -154,7 +154,7 @@ function App() {
 
             {/* THE CONTACT US BUTTON */}
             <div>
-              <button className="text-3xl px-4 py-3 font-bold text-white bg-black">
+              <button onClick={scrollToContactUs} className="text-3xl px-4 py-3 font-bold text-white bg-black hover:border-black hover:border-2 hover:text-black hover:bg-white">
                 Contact Us
               </button>
             </div>
@@ -213,15 +213,7 @@ function App() {
             {/* THE TEXT SECTION */}
             <div>
               <p className=" text-xl">
-                At the heart of LaseTech are our core values: integrity,
-                honesty, innovation, and respect for people. We believe that
-                true success lies not only in providing exceptional products and
-                services but also in fostering public trust and conducting
-                ourselves as responsible corporate citizens. Our approach is
-                simple—become a partner in our clients challenges and work
-                together to create sustainable, long-term solutions. With
-                LaseTech, you’re not just choosing a service provider; you’re
-                gaining a dedicated partner committed to helping you succeed.
+              At the heart of LaseTech are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a <span className=" text-[#FF3131] font-semibold">Network Service Provider</span> but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTech, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.
               </p>
             </div>
           </div>
@@ -434,11 +426,11 @@ Ensuring complete coverage of all critical areas for enhanced security.
           {/* CONTACT US PART 2 */}
           <div className=" flex flex-col text-xl relative right-[10rem] top-[2rem]">
               {/* MOBILE */}
-                <p><span className=" font-bold">Mobile</span> : 7488572581</p>
+                <p><span className=" font-bold">Mobile</span> : +91 - 9955440037</p>
 
 
               {/* EMAIL */}
-              <p><span className=" font-bold">E-mail</span> : rohanlasetek@gmail.com</p>
+              <p><span className=" font-bold">E-mail</span> : rksri@lasetek.in</p>
 
               <br />
 
