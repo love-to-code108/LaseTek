@@ -153,11 +153,12 @@ function App() {
             </div>
 
             {/* THE CONTACT US BUTTON */}
-            <div>
-              <button onClick={scrollToContactUs} className="text-3xl px-4 py-3 font-bold text-white bg-black hover:border-black hover:border-2 hover:text-black hover:bg-white">
+           <div className=" mb-4">
+              {/* <button onClick={scrollToContactUs} className="text-3xl px-4 py-3 font-bold text-white bg-black hover:border-black hover:border-2 hover:text-black hover:bg-white">
                 Contact Us
-              </button>
+              </button> */}
             </div>
+           
           </div>
 
           {/* PICTURE 1 */}
