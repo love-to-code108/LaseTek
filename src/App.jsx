@@ -213,7 +213,7 @@ function App() {
             {/* THE TEXT SECTION */}
             <div>
               <p className=" text-xl">
-              At the heart of LaseTech are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a <span className=" text-[#FF3131] font-semibold">Network Service Provider</span> but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTech, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.
+              At the heart of LaseTek are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a <span className=" text-[#FF3131] font-semibold">Network Service Provider</span> but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.
               </p>
             </div>
           </div>
@@ -354,7 +354,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
             <p className="text-xl">
               Our approach is simple—become a partner in our clients' challenges
               and work together to create sustainable, long-term solutions. With
-              LaseTech, you’re not just choosing a service provider; you’re
+              LaseTek, you’re not just choosing a service provider; you’re
               gaining a dedicated partner committed to helping you succeed.
             </p>
           </div>
