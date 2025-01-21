@@ -78,7 +78,7 @@ function App() {
 
 
         {/* NAVIGATION BAR */}
-        <div className=" bg-white w-[100%] flex justify-between stickyf top-0 z-[80]
+        <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
         3xl:px-20
         2xl:py-4 2xl:pt-6 2xl:px-10 
          md:px-8 md:py-4
