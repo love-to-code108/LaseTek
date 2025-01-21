@@ -78,7 +78,7 @@ function App() {
 
 
         {/* NAVIGATION BAR */}
-        <div className=" bg-white w-[100%] flex justify-between stickyf top-0 z-[80]
+        <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
         3xl:px-20
         2xl:py-4 2xl:pt-6 2xl:px-10 
          md:px-8 md:py-4
@@ -439,7 +439,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
               <p>410, New Layout</p>
               <p>Sitaramdera, P.O. Agrico</p>
               <p>Jamshedpur, Jharkand</p>
-              <p>India - 8310 009</p>
+              <p>India - 831009</p>
           </div>
 
         </div>
