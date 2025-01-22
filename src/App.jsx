@@ -120,15 +120,15 @@ function App() {
 
         {/* HERO SECTION */}
         <div ref={Home} className=" relative bottom-[8rem]"></div>
-        <div  className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
-        md:px-8 md:py-4
+        <div  className="w-[100%] h-[96vh] flex items-center 2xl:pt-4 2xl:px-10 3xl:px-20 relative
+        md:px-8 md:pt-4
         heroSection-main
         
         ">
           {/* HERO SECTION WRITING SUPER BOX */}
           <div className=" ">
             {/* PRECISION IN NETWORKING */}
-            <div className=" text-6xl font-bold">
+            <div className=" lg:text-6xl font-bold md:text-5xl">
               <h1>
                 Precision In{" "}
                 <span className=" text-[#383DAD]">
@@ -138,19 +138,23 @@ function App() {
             </div>
 
             {/* EXCELLENCE IN SECURITY */}
-            <div className=" text-6xl font-bold mb-2">
+            <div className=" lg:text-6xl font-bold mb-2 md:text-5xl">
               <h1>Excellence In Security</h1>
             </div>
 
             {/* THE REST OF THE TEXT */}
-            <div className=" text-xl w-[42rem] mb-4">
-              <p>
+            <div className=" text-xl w-[40rem] mb-4 md:text-xl">
+              {/* <p>
                 Building lasting partnerships through integrity, innovation, and
                 unmatched service—
                 <span className=" text-[#383DAD]">
                   trusted by industry leaders like Tata Steel
                 </span>{" "}
                 and powered by <br /> global technology brands
+              </p> */}
+              <p>
+                At LaseTek, we believe in building lasting partnerships rooted in integrity, innovation, and an unwavering commitment to excellence. <span className=" red-HL">Trusted by</span> industry leaders like <span className=" red-HL">Tata Steel</span>, we have consistently delivered solutions that empower businesses to stay ahead in a fast-evolving technological landscape.
+                Our collaborations with global technology giants such as <span className=" red-HL">Cisco, Fortigate, R&M, and Hikvision</span>  allow us to integrate cutting-edge products into our services, ensuring reliability, scalability, and top-tier performance. By prioritizing our client's needs and delivering unmatched service quality, <span className="">we have become a dependable partner in driving success and shaping the future of connectivity and security.</span>
               </p>
             </div>
 
@@ -167,7 +171,7 @@ function App() {
           xl:top-[2rem] xl:right-[16rem]
           heroSection-pic1
            ">
-            <img src={HeroSectionImg1} alt="" />
+            <img className=" rounded-[0.8rem]" src={HeroSectionImg1} alt="" />
           </div>
 
           {/* PICTURE 2 */}
@@ -175,7 +179,7 @@ function App() {
           xl:right-[2rem]
           heroSection-pic2
           ">
-            <img src={HeroSectionImg2CCTV} alt="" />
+            <img className=" rounded-[0.8rem]" src={HeroSectionImg2CCTV} alt="" />
           </div>
         </div>
 
