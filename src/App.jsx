@@ -207,7 +207,7 @@ function App() {
           <div className=" w-[45rem]
           md:w-[38rem]">
             {/* HEADING */}
-            <div className=" mb-2">
+            <div className=" mb-4">
               <h1 className=" text-5xl font-bold">
                 About <span className=" text-[#383DAD]">Us</span>
               </h1>
@@ -247,19 +247,17 @@ function App() {
         xl:px-8
         md:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
-          <div className="w-[45rem]">
+          <div className="w-[55rem]">
             {/* HEADING */}
-            <h1 className=" text-5xl font-bold mb-2">
+            <h1 className=" text-5xl font-bold mb-4">
               <span className=" text-[#383DAD]">Services</span> We Provide
             </h1>
 
             {/* OTHER TEXT */}
             <p className="text-xl">
-              We take pride in being trusted partners to industry leaders,
-              including Tata Steel Ltd and many others across multiple
-              locations. Our partnerships with global technology providers like
-              Cisco, Fortigate, R&M, and Hikvision enable us to deliver
-              world-class solutions that exceed expectations.
+            We take pride in being trusted partners to industry leaders, including <span className=" text-[#ff3131] font-bold">Tata Steel Ltd</span> and many others across multiple locations such as <span className=" text-[#ff3131] font-bold">Tata Steel Ltd Jamshedpur, Jharia, Noamundi, Joda, and Meramandali , as well as Rourkela, Bokaro, Durgapur, and Bhilai</span> . Our strong collaborations with <span className=" ">global technology providers like Cisco, known for advanced networking switches, Fortigate for cutting-edge firewall security systems, R&M for high-quality networking components, and Hikvision for reliable surveillance solutions, enable us to deliver world-class services that exceed expectations. </span> <br /> <br />
+
+            At LaseTek, our commitment to excellence and innovation drives us to ensure every project is executed with precision, quality, and timely delivery. Together with our clients and partners, we’re shaping a more connected and secure future.
             </p>
           </div>
 
