@@ -227,7 +227,7 @@ function App() {
 
           {/* ABOUT US SECTION PICTURE 1 */}
           <div>
-            <img className=" xl:w-[35rem] md:w-[34rem]" src={aboutUsSectionImg} alt="" />
+            <img className=" xl:w-[35rem] md:w-[34rem] rounded-[0.8rem]" src={aboutUsSectionImg} alt="" />
           </div>
         </div>
 
@@ -311,9 +311,7 @@ Consultation on selecting the best cameras and systems for client needs."
               <ServicesCard
                 img={ServiceSectionImg5}
                 heading="CCTV Installation and Setup"
-                text="Professional installation of CCTV cameras, NVRs, and related equipment.
-Secure wiring and integration with existing infrastructure.
-Testing and calibration to ensure seamless operation."
+                text="We offer professional installation of CCTV cameras, NVRs, and associated equipment, ensuring precise placement for comprehensive coverage. Our experts handle secure wiring and seamless integration with existing systems to maintain a clean, efficient setup. After installation, we thoroughly test and calibrate the system to ensure smooth and reliable operation."
               />
 
               {/* CARD 6 */}
