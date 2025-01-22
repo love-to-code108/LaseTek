@@ -452,7 +452,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
               <p className=" text-2xl font-bold">Lase Tek</p>
               <p>410, New Layout</p>
               <p>Sitaramdera, P.O. Agrico</p>
-              <p>Jamshedpur, Jharkand</p>
+              <p>Jamshedpur, Jharkhand</p>
               <p>India - 831009</p>
           </div>
 
