@@ -99,7 +99,7 @@ function App() {
 
           {/* CONTACT US BUTTON */}
           <div className=" flex justify-center items-center text-3xl ">
-            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white">
+            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white rounded-[0.6rem]">
               Contact Us
             </button>
           </div>
