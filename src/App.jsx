@@ -1,5 +1,7 @@
 import "./App.css";
 import logo from "./assets/Vector-1.png";
+// HERO SECTION IMAGES
+import HeroSectionQuote from "./assets/quoteHighlighter.svg"
 import HeroSectionImg1 from "./assets/networking2 1.png";
 import HeroSectionImg2CCTV from "./assets/cctv4 1.png";
 
@@ -71,7 +73,7 @@ function App() {
 
 
       {/* ==MAIN 2==  */}
-      <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
+      <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px] relative">
 
 
 
@@ -99,7 +101,7 @@ function App() {
 
           {/* CONTACT US BUTTON */}
           <div className=" flex justify-center items-center text-3xl ">
-            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white">
+            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white rounded-[0.6rem]">
               Contact Us
             </button>
           </div>
@@ -119,14 +121,23 @@ function App() {
 
 
         {/* HERO SECTION */}
-        <div ref={Home} className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
-        md:px-8 md:py-4
+        <div ref={Home} className=" relative bottom-[8rem]"></div>
+        <div  className="w-[100%] h-[96vh] flex items-center 2xl:pt-4 2xl:px-10 3xl:px-20 relative
+        md:px-8 md:pt-4
         heroSection-main
+        
         ">
           {/* HERO SECTION WRITING SUPER BOX */}
           <div className=" ">
+
+            {/* THE QUOTE HIGHLIGHTER */}
+            <div className=" absolute top-[2.5rem]">
+              <img src={HeroSectionQuote} alt="" />
+            </div>
+
+
             {/* PRECISION IN NETWORKING */}
-            <div className=" text-6xl font-bold">
+            <div className=" lg:text-6xl font-bold md:text-5xl">
               <h1>
                 Precision In{" "}
                 <span className=" text-[#383DAD]">
@@ -136,27 +147,31 @@ function App() {
             </div>
 
             {/* EXCELLENCE IN SECURITY */}
-            <div className=" text-6xl font-bold mb-2">
+            <div className=" lg:text-6xl font-bold mb-2 md:text-5xl">
               <h1>Excellence In Security</h1>
             </div>
 
             {/* THE REST OF THE TEXT */}
-            <div className=" text-xl w-[42rem] mb-4">
-              <p>
+            <div className=" text-xl w-[40rem] mb-4 md:text-xl">
+              {/* <p>
                 Building lasting partnerships through integrity, innovation, and
                 unmatched service—
                 <span className=" text-[#383DAD]">
                   trusted by industry leaders like Tata Steel
                 </span>{" "}
                 and powered by <br /> global technology brands
+              </p> */}
+              <p>
+                At LaseTek, we believe in building lasting partnerships rooted in integrity, innovation, and an unwavering commitment to excellence. <span className=" red-HL">Trusted by</span> industry leaders like <span className=" red-HL">Tata Steel</span>, we have consistently delivered solutions that empower businesses to stay ahead in a fast-evolving technological landscape.
+                Our collaborations with global technology giants such as <span className=" red-HL">Cisco, Fortigate, R&M, and Hikvision</span>  allow us to integrate cutting-edge products into our services, ensuring reliability, scalability, and top-tier performance.
               </p>
             </div>
 
             {/* THE CONTACT US BUTTON */}
             <div>
-              <button onClick={scrollToContactUs} className="text-3xl px-4 py-3 font-bold text-white bg-black hover:border-black hover:border-2 hover:text-black hover:bg-white">
+              {/* <button onClick={scrollToContactUs} className="text-3xl px-4 py-3 font-bold text-white bg-black hover:border-black hover:border-2 hover:text-black hover:bg-white">
                 Contact Us
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -165,7 +180,7 @@ function App() {
           xl:top-[2rem] xl:right-[16rem]
           heroSection-pic1
            ">
-            <img src={HeroSectionImg1} alt="" />
+            <img className=" rounded-[0.8rem]" src={HeroSectionImg1} alt="" />
           </div>
 
           {/* PICTURE 2 */}
@@ -173,7 +188,7 @@ function App() {
           xl:right-[2rem]
           heroSection-pic2
           ">
-            <img src={HeroSectionImg2CCTV} alt="" />
+            <img className=" rounded-[0.8rem]" src={HeroSectionImg2CCTV} alt="" />
           </div>
         </div>
 
@@ -197,14 +212,15 @@ function App() {
 
 
         {/* ======= ABOUT US SECTION ======== */}
-        <div ref={AboutUs} className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={AboutUs} className=" relative bottom-[10rem]"></div>
+        <div  className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
           <div className=" w-[45rem]
           md:w-[38rem]">
             {/* HEADING */}
-            <div className=" mb-2">
+            <div className=" mb-4">
               <h1 className=" text-5xl font-bold">
                 About <span className=" text-[#383DAD]">Us</span>
               </h1>
@@ -213,14 +229,14 @@ function App() {
             {/* THE TEXT SECTION */}
             <div>
               <p className=" text-xl">
-              At the heart of LaseTech are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a <span className=" text-[#FF3131] font-semibold">Network Service Provider</span> but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTech, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.
+              At the heart of LaseTek are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a <span className=" text-[#FF3131] font-semibold">Network Service Provider</span> but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.
               </p>
             </div>
           </div>
 
           {/* ABOUT US SECTION PICTURE 1 */}
           <div>
-            <img className=" xl:w-[35rem] md:w-[34rem]" src={aboutUsSectionImg} alt="" />
+            <img className=" xl:w-[35rem] md:w-[34rem] rounded-[0.8rem]" src={aboutUsSectionImg} alt="" />
           </div>
         </div>
 
@@ -239,23 +255,22 @@ function App() {
 
 
         {/* SERVICES WE PROVIDE */}
-        <div ref={Services} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={Services} className=" relative bottom-[8rem]"></div>
+        <div  className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
-          <div className="w-[45rem]">
+          <div className="w-[55rem]">
             {/* HEADING */}
-            <h1 className=" text-5xl font-bold mb-2">
+            <h1 className=" text-5xl font-bold mb-4">
               <span className=" text-[#383DAD]">Services</span> We Provide
             </h1>
 
             {/* OTHER TEXT */}
             <p className="text-xl">
-              We take pride in being trusted partners to industry leaders,
-              including Tata Steel Ltd and many others across multiple
-              locations. Our partnerships with global technology providers like
-              Cisco, Fortigate, R&M, and Hikvision enable us to deliver
-              world-class solutions that exceed expectations.
+            We take pride in being trusted partners to industry leaders, including <span className=" text-[#ff3131] font-bold">Tata Steel Ltd</span> and many others across multiple locations such as <span className=" text-[#ff3131] font-bold">Tata Steel Ltd Jamshedpur, Jharia, Noamundi, Joda, and Meramandali , as well as Rourkela, Bokaro, Durgapur, and Bhilai</span> . Our strong collaborations with <span className=" ">global technology providers like Cisco, known for advanced networking switches, Fortigate for cutting-edge firewall security systems, R&M for high-quality networking components, and Hikvision for reliable surveillance solutions, enable us to deliver world-class services that exceed expectations. </span> <br /> <br />
+
+            At LaseTek, our commitment to excellence and innovation drives us to ensure every project is executed with precision, quality, and timely delivery. Together with our clients and partners, we’re shaping a more connected and secure future.
             </p>
           </div>
 
@@ -305,9 +320,7 @@ Consultation on selecting the best cameras and systems for client needs."
               <ServicesCard
                 img={ServiceSectionImg5}
                 heading="CCTV Installation and Setup"
-                text="Professional installation of CCTV cameras, NVRs, and related equipment.
-Secure wiring and integration with existing infrastructure.
-Testing and calibration to ensure seamless operation."
+                text="We offer professional installation of CCTV cameras, NVRs, and associated equipment, ensuring precise placement for comprehensive coverage. Our experts handle secure wiring and seamless integration with existing systems to maintain a clean, efficient setup. After installation, we thoroughly test and calibrate the system to ensure smooth and reliable operation."
               />
 
               {/* CARD 6 */}
@@ -340,7 +353,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* WHY CHOOSE US */}
-        <div ref={WhyChooseUs} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={WhyChooseUs} className=" relative bottom-[8rem]" ></div>
+        <div  className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/* WHY CHOOSE US WRITING SUPER BOX */}
@@ -354,7 +368,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
             <p className="text-xl">
               Our approach is simple—become a partner in our clients' challenges
               and work together to create sustainable, long-term solutions. With
-              LaseTech, you’re not just choosing a service provider; you’re
+              LaseTek, you’re not just choosing a service provider; you’re
               gaining a dedicated partner committed to helping you succeed.
             </p>
           </div>
@@ -438,7 +452,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
               <p className=" text-2xl font-bold">Lase Tek</p>
               <p>410, New Layout</p>
               <p>Sitaramdera, P.O. Agrico</p>
-              <p>Jamshedpur, Jharkand</p>
+              <p>Jamshedpur, Jharkhand</p>
               <p>India - 831009</p>
           </div>
 

@@ -15,6 +15,22 @@ html {
     scroll-behavior: smooth;
   }
 
+
+.red-HL{
+    color: #ff3131;
+    font-weight: 800;
+}
+
+.black-HL{
+    color: black;
+    font-weight: 800;
+}
+
+.blue-HL{
+    color:#383DAD;
+    font-weight: 800;
+}
+
 /* ======== NAVIGATION BAR ========= */
 .navBarSections{
     display: flex;
@@ -24,6 +40,8 @@ html {
     padding: 5px;
     height: 2rem;
 }
+
+
 
 
 
