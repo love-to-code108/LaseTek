@@ -1,5 +1,7 @@
 import "./App.css";
 import logo from "./assets/Vector-1.png";
+// HERO SECTION IMAGES
+import HeroSectionQuote from "./assets/quoteHighlighter.svg"
 import HeroSectionImg1 from "./assets/networking2 1.png";
 import HeroSectionImg2CCTV from "./assets/cctv4 1.png";
 
@@ -127,6 +129,13 @@ function App() {
         ">
           {/* HERO SECTION WRITING SUPER BOX */}
           <div className=" ">
+
+            {/* THE QUOTE HIGHLIGHTER */}
+            <div className=" absolute top-[2.5rem]">
+              <img src={HeroSectionQuote} alt="" />
+            </div>
+
+
             {/* PRECISION IN NETWORKING */}
             <div className=" lg:text-6xl font-bold md:text-5xl">
               <h1>
@@ -154,7 +163,7 @@ function App() {
               </p> */}
               <p>
                 At LaseTek, we believe in building lasting partnerships rooted in integrity, innovation, and an unwavering commitment to excellence. <span className=" red-HL">Trusted by</span> industry leaders like <span className=" red-HL">Tata Steel</span>, we have consistently delivered solutions that empower businesses to stay ahead in a fast-evolving technological landscape.
-                Our collaborations with global technology giants such as <span className=" red-HL">Cisco, Fortigate, R&M, and Hikvision</span>  allow us to integrate cutting-edge products into our services, ensuring reliability, scalability, and top-tier performance. By prioritizing our client's needs and delivering unmatched service quality, <span className="">we have become a dependable partner in driving success and shaping the future of connectivity and security.</span>
+                Our collaborations with global technology giants such as <span className=" red-HL">Cisco, Fortigate, R&M, and Hikvision</span>  allow us to integrate cutting-edge products into our services, ensuring reliability, scalability, and top-tier performance.
               </p>
             </div>
 
