@@ -71,7 +71,7 @@ function App() {
 
 
       {/* ==MAIN 2==  */}
-      <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px]">
+      <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px] relative">
 
 
 
@@ -119,9 +119,11 @@ function App() {
 
 
         {/* HERO SECTION */}
-        <div ref={Home} className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
+        <div ref={Home} className=" relative bottom-[8rem]"></div>
+        <div  className="w-[100%] h-[96vh] flex items-center 2xl:py-4 2xl:px-10 3xl:px-20 relative
         md:px-8 md:py-4
         heroSection-main
+        
         ">
           {/* HERO SECTION WRITING SUPER BOX */}
           <div className=" ">
@@ -154,9 +156,9 @@ function App() {
 
             {/* THE CONTACT US BUTTON */}
             <div>
-              <button onClick={scrollToContactUs} className="text-3xl px-4 py-3 font-bold text-white bg-black hover:border-black hover:border-2 hover:text-black hover:bg-white">
+              {/* <button onClick={scrollToContactUs} className="text-3xl px-4 py-3 font-bold text-white bg-black hover:border-black hover:border-2 hover:text-black hover:bg-white">
                 Contact Us
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -197,7 +199,8 @@ function App() {
 
 
         {/* ======= ABOUT US SECTION ======== */}
-        <div ref={AboutUs} className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={AboutUs} className=" relative bottom-[10rem]"></div>
+        <div  className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
@@ -239,7 +242,8 @@ function App() {
 
 
         {/* SERVICES WE PROVIDE */}
-        <div ref={Services} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={Services} className=" relative bottom-[8rem]"></div>
+        <div  className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
@@ -340,7 +344,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* WHY CHOOSE US */}
-        <div ref={WhyChooseUs} className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
+        <div ref={WhyChooseUs} className=" relative bottom-[8rem]" ></div>
+        <div  className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8">
           {/* WHY CHOOSE US WRITING SUPER BOX */}
