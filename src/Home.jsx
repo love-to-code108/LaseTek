@@ -321,7 +321,7 @@ function HomePage() {
 
           {/* GRID FOR CARDS */}
           <div className=" py-20">
-            <div className=" grid grid-cols-3 grid-flow-row 2xl:gap-[4.5rem]
+            <div className=" grid grid-cols-3 2xl:gap-[4.5rem]
             xl:gap-x-4 xl:gap-y-8
             md:justify-center md:content-center
             md:gap-y-8">

@@ -80,3 +80,15 @@ html {
     }
 }
 
+
+
+
+/* =========== GALLERY ================= */
+.Gallery-masonry-style{
+    columns: 400px;
+}
+
+.Gallery-indivisual-styles{
+    margin-bottom: 1rem;
+    border: 2px solid black;
+}
