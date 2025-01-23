@@ -312,6 +312,7 @@ function HomePage() {
               <li><span className=" font-bold text-[#ff3131]">R&M:</span> High-quality networking components for robust infrastructure
               </li>
               <li><span className=" font-bold text-[#ff3131]">Hikvision:</span> Reliable cameras and NVR solutions for top-tier surveillance</li>
+              <li><span className=" font-bold text-[#ff3131]">RIT</span></li>
             </ul>
             
             <br />
