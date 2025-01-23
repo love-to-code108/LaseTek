@@ -78,7 +78,7 @@ function HomePage() {
 
 
   // ALWAYS START THE PAGE FROM TOP
-  // scrollToTop();
+  scrollToTop();
 
   // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
   return (
