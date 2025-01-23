@@ -78,7 +78,7 @@ function HomePage() {
 
 
   // ALWAYS START THE PAGE FROM TOP
-  scrollToTop();
+  // scrollToTop();
 
   // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
   return (
@@ -485,7 +485,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
           {/* CONTACT US PART 2 */}
           <div className=" flex flex-col text-xl relative right-[10rem] top-[2rem]">
               {/* MOBILE */}
-                <p><span className=" font-bold">Mobile</span> : +91 - 9955440037</p>
+                <p><span className=" font-bold">Mobile</span> : +91 - 9955440037 <br/><span className=" ml-[4.39rem]">+91 - 8986640037</span> </p>
 
 
               {/* EMAIL */}
