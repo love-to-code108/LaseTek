@@ -268,9 +268,32 @@ function App() {
 
             {/* OTHER TEXT */}
             <p className="text-xl">
-            We take pride in being trusted partners to industry leaders, including <span className=" text-[#ff3131] font-bold">Tata Steel Ltd</span> and many others across multiple locations such as <span className=" text-[#ff3131] font-bold">Tata Steel Ltd Jamshedpur, Jharia, Noamundi, Joda, and Meramandali , as well as Rourkela, Bokaro, Durgapur, and Bhilai</span> . Our strong collaborations with <span className=" ">global technology providers like Cisco, known for advanced networking switches, Fortigate for cutting-edge firewall security systems, R&M for high-quality networking components, and Hikvision for reliable surveillance solutions, enable us to deliver world-class services that exceed expectations. </span> <br /> <br />
+            We take pride in being trusted partners to industry leaders, including Tata Steel Ltd and many others across multiple locations. Our partnerships with global technology providers like Cisco, Fortigate, R&M, and Hikvision enable us to deliver world-class solutions that exceed expectations.
+            <br />
+            <br />
 
-            At LaseTek, our commitment to excellence and innovation drives us to ensure every project is executed with precision, quality, and timely delivery. Together with our clients and partners, we’re shaping a more connected and secure future.
+            <span className=" text-[#383dad] font-bold text-2xl">Our Client Base:</span>
+            <ul className=" list-disc ml-6">
+              <li><span className=" font-bold">Tata Steel Ltd</span> (Jamshedpur, Jharia, Noamundi, Joda)</li>
+              <li className=" font-bold"> Tata Steel Ltd Meramandali</li>
+              <li>Rourkela, Bokaro, Durgapur, Bhilai</li>
+            </ul>
+
+
+            <br />
+
+            <span className=" text-[#383dad] font-bold text-2xl">Our Technology Partners:</span>
+            
+            <ul className=" list-disc ml-6">
+              <li><span className=" font-bold text-[#ff3131]">Cisco:</span> Advanced networking switches for seamless connectivity</li>
+              <li><span className=" font-bold text-[#ff3131]">Fortigate:</span> Cutting-edge firewall security systems to safeguard your business</li>
+              <li><span className=" font-bold text-[#ff3131]">R&M:</span> High-quality networking components for robust infrastructure
+              </li>
+              <li><span className=" font-bold text-[#ff3131]">Hikvision:</span> Reliable cameras and NVR solutions for top-tier surveillance</li>
+            </ul>
+            
+            <br />
+            At LaseTek, our services are backed by a commitment to excellence and innovation. Together with our clients and partners, <span className=" font-bold">we work tirelessly to ensure every project is executed with precision, quality, and on-time delivery.</span>
             </p>
           </div>
 
