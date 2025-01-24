@@ -87,7 +87,7 @@ function HomePage() {
 
 
   // ALWAYS START THE PAGE FROM TOP
-  // scrollToTop();
+  scrollToTop();
 
 
 
@@ -267,22 +267,25 @@ function HomePage() {
 
         {/* ======= ABOUT US SECTION ======== */}
         <div ref={AboutUs} className=" relative bottom-[10rem]"></div>
-        <div  className="flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
+        <div  className="px-8 flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
-        md:px-8">
+        md:px-8
+        sm3:px-8">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
-          <div className=" w-[45rem]
-          md:w-[38rem]">
+          <div className=" lg:w-[45rem]
+          md:w-[38rem]
+          sm3:w-[35rem]">
             {/* HEADING */}
             <div className=" mb-4">
-              <h1 className=" text-5xl font-bold">
+              <h1 className=" md:text-5xl font-bold
+              sm3:text-4xl">
                 About <span className=" text-[#383DAD]">Us</span>
               </h1>
             </div>
 
             {/* THE TEXT SECTION */}
             <div>
-              <p className=" text-xl">
+              <p className="text-base lg:text-xl ">
               At the heart of LaseTek are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a <span className=" text-[#FF3131] font-semibold">Network Service Provider</span> but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.
               </p>
             </div>
@@ -290,7 +293,7 @@ function HomePage() {
 
           {/* ABOUT US SECTION PICTURE 1 */}
           <div>
-            <img className=" xl:w-[35rem] md:w-[34rem] rounded-[0.8rem]" src={aboutUsSectionImg} alt="" />
+            <img className=" xl:w-[35rem] md:w-[34rem] rounded-[0.8rem] max-w-[34rem]" src={aboutUsSectionImg} alt="" />
           </div>
         </div>
 
@@ -312,16 +315,18 @@ function HomePage() {
         <div ref={Services} className=" relative bottom-[8rem]"></div>
         <div  className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
-        md:px-8">
+        md:px-8
+        sm3:px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
           <div className="w-[55rem]">
             {/* HEADING */}
-            <h1 className=" text-5xl font-bold mb-4">
+            <h1 className=" md:text-5xl font-bold mb-4
+            text-4xl">
               <span className=" text-[#383DAD]">Services</span> We Provide
             </h1>
 
             {/* OTHER TEXT */}
-            <div className="text-xl">
+            <div className="md:text-xl">
             We take pride in being trusted partners to industry leaders, including Tata Steel Ltd and many others across multiple locations. Our partnerships with global technology providers like Cisco, Fortigate, R&M, and Hikvision enable us to deliver world-class solutions that exceed expectations.
             <br />
             <br />
@@ -357,7 +362,9 @@ function HomePage() {
             <div className=" grid grid-cols-3 2xl:gap-[4.5rem]
             xl:gap-x-4 xl:gap-y-8
             md:justify-center md:content-center
-            md:gap-y-8">
+            md:gap-y-8
+            sm3:gap-8
+            ">
               {/* CARD 1 */}
               <ServicesCard
                 img={ServiceSectionImg1}
@@ -434,16 +441,17 @@ Ensuring complete coverage of all critical areas for enhanced security.
         <div ref={WhyChooseUs} className=" relative bottom-[8rem]" ></div>
         <div  className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
-        md:px-8">
+        md:px-8
+        px-8">
           {/* WHY CHOOSE US WRITING SUPER BOX */}
           <div className="w-[45rem] mb-12">
             {/* HEADING */}
-            <h1 className=" text-5xl font-bold mb-2">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">
               Why <span className=" text-[#383DAD]">Choose Us</span>
             </h1>
 
             {/* TEXT */}
-            <p className="text-xl">
+            <p className="text-base md:text-xl">
               Our approach is simple—become a partner in our clients' challenges
               and work together to create sustainable, long-term solutions. With
               LaseTek, you’re not just choosing a service provider; you’re
@@ -454,7 +462,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
           {/* WHY CHOOSE US SECTION GRID FOR CARDS */}
           <div className=" felx flex-col">
             {/* THE FIRST ROW */}
-            <div className=" flex justify-between mb-8
+            <div className=" flex justify-between mb-4 md:mb-8
             ">
               <WhyChooseUsCard
                 img={WhyChooseUsImg1}
@@ -500,7 +508,8 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
         {/* CONTACT US */}
         <div ref={ContactUs} className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8
-        md:px-8">
+        md:px-8
+        px-8">
 
 
           {/* CONTACT US PART 1 */}

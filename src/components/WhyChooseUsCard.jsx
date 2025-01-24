@@ -6,6 +6,7 @@ export const WhyChooseUsCard = (props) => {
     xl:w-[700px]
     lg:w-[660px]
     md:w-[610px]
+    sm3:w-[560px]
     ">
 
 
@@ -21,14 +22,14 @@ export const WhyChooseUsCard = (props) => {
       {/* WRITING SUPER BOX */}
       <div>
         {/* HEADING */}
-            <div className=" text-3xl font-bold text-[#383DAD]">
+            <div className="text-xl md:text-3xl font-bold text-[#383DAD]">
                 <h1>{props.heading}</h1>
             </div>
 
 
 
         {/* TEXT */}
-            <div className=" text-lg">
+            <div className="text-base md:text-lg">
                 <p>{props.text}</p>
             </div>
 

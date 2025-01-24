@@ -48,6 +48,17 @@ export const Gallery = () => {
   scrollToTop();
 
 
+
+
+
+
+
+
+
+
+
+
+
   return (
     // THE MAIN GREY PAGE THE LOWEST LEVEL
     // ==MAIN 1==
@@ -60,6 +71,7 @@ export const Gallery = () => {
             3xl:px-20
             2xl:py-4 2xl:pt-6 2xl:px-10 
              md:px-8 md:py-4
+             px-8 py-4
              
             "
         >
@@ -69,20 +81,21 @@ export const Gallery = () => {
           </div>
 
           {/* THE SECTIONS */}
-          <div className="flex items-center justify-evenly text-2xl w-[20rem] ">
+          <div className="flex items-center justify-evenly 
+          xl:text-2xl w-[20rem] text-xl">
             <button onClick={GoToHome} className="navBarSections">
               Home
             </button>
-            <button onClick={GoToHome} className="navBarSections text-[#383dad]">
+            <button onClick={scrollToTop} className="navBarSections text-[#383dad]">
               Gallery
             </button>
           </div>
 
           {/* CONTACT US BUTTON */}
-          <div className=" flex justify-center items-center text-3xl ">
+          <div className=" flex justify-center items-center text-xl xl:text-3xl ">
             <button
               onClick={scrollToContactUs}
-              className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white rounded-[0.6rem]"
+              className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white rounded-md"
             >
               Contact Us
             </button>
@@ -97,9 +110,10 @@ export const Gallery = () => {
 
 
         {/* HEADING */}
-        <div className="  py-20 2xl:px-10 3xl:px-20 relative 
+        <div className=" py-10 md:py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
-        md:px-8">
+        md:px-8
+        px-8">
           <h1 className=" text-8xl font-bold mb-4">
             Gallery
           </h1>
@@ -119,6 +133,7 @@ export const Gallery = () => {
           className="py-5 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8
+        px-8
         Gallery-masonry-style"
         >
           <img src={image1} alt="" className="Gallery-indivisual-styles"/>
@@ -152,7 +167,8 @@ export const Gallery = () => {
         {/* CONTACT US */}
         <div ref={ContactUs}
           className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8
-        md:px-8"
+        md:px-8
+        px-8"
         >
           {/* CONTACT US PART 1 */}
           <div className=" w-[30rem] h-[20rem]">
