@@ -171,7 +171,7 @@ export const Gallery = () => {
         px-8"
         >
           {/* CONTACT US PART 1 */}
-          <div className=" w-[30rem] h-[20rem]">
+          <div className=" w-[30rem] md:h-[20rem]">
             {/* CONTACT US HEADING */}
             <h1 className=" text-8xl font-bold">
               Contact <span className=" text-[#383DAD]">Us</span>
@@ -211,7 +211,7 @@ export const Gallery = () => {
         </div>
 
         {/* FOOTER */}
-        <div className=" w-[100%] h-[10rem] bg-black"></div>
+        <div className=" w-[100%] sm3:h-[10rem] bg-black"></div>
 
 
 
