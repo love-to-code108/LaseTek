@@ -140,7 +140,7 @@ function HomePage() {
           </div>
 
           {/* THE SECTIONS */}
-          <div className="flex items-center justify-evenly xl:text-2xl w-[686px]
+          <div className="flex items-center justify-evenly xl:text-2xl sm2:w-[686px]
           lg:text-xl sm3:text-xl sm1:w-[550px]">
             <button onClick={scrollToHome} className="navBarSections">Home</button>
             <button onClick={scrollToAboutUs} className="navBarSections">About Us</button>
@@ -184,7 +184,7 @@ function HomePage() {
 
             {/* THE QUOTE HIGHLIGHTER */}
             <div className=" absolute top-[2.5rem]">
-              <img className="sm1:w-[27rem] sm3:w-[30rem]" src={HeroSectionQuote} alt="" />
+              <img className="sm1:w-[27rem] sm3:w-[30rem] md:w-[38rem]" src={HeroSectionQuote} alt="" />
             </div>
 
 
@@ -208,7 +208,7 @@ function HomePage() {
             </div>
 
             {/* THE REST OF THE TEXT */}
-            <div className=" text-xl w-[40rem] mb-4 md:text-base
+            <div className=" lg:text-xl w-[40rem] mb-4 md:text-base
             sm3:text-base sm3:w-[35rem]
             sm1:text-base sm1:w-[28rem]">
               {/* <p>
