@@ -7,6 +7,8 @@ export const WhyChooseUsCard = (props) => {
     lg:w-[660px]
     md:w-[610px]
     sm3:w-[560px]
+    sm2:w-[510px]
+    sm1:w-[465px]
     ">
 
 

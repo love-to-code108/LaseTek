@@ -127,7 +127,7 @@ function HomePage() {
 
 
         {/* NAVIGATION BAR */}
-        <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
+        <div className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80] px-8 py-4
         3xl:px-20
         2xl:py-4 2xl:pt-6 2xl:px-10 
          md:px-8 md:py-4
@@ -141,7 +141,7 @@ function HomePage() {
 
           {/* THE SECTIONS */}
           <div className="flex items-center justify-evenly xl:text-2xl w-[686px]
-          lg:text-xl sm3:text-xl">
+          lg:text-xl sm3:text-xl sm1:w-[550px]">
             <button onClick={scrollToHome} className="navBarSections">Home</button>
             <button onClick={scrollToAboutUs} className="navBarSections">About Us</button>
             <button onClick={scrollToServicves} className="navBarSections">Services</button>
@@ -175,6 +175,7 @@ function HomePage() {
         <div  className="w-[100%] h-[96vh] flex items-center 2xl:pt-4 2xl:px-10 3xl:px-20 relative
         md:px-8 md:pt-4
         sm3:px-8 sm3:pt-4
+        px-8 pt-8
         heroSection-main
         
         ">
@@ -183,13 +184,14 @@ function HomePage() {
 
             {/* THE QUOTE HIGHLIGHTER */}
             <div className=" absolute top-[2.5rem]">
-              <img className=" sm3:w-[30rem]" src={HeroSectionQuote} alt="" />
+              <img className="sm1:w-[27rem] sm3:w-[30rem]" src={HeroSectionQuote} alt="" />
             </div>
 
 
             {/* PRECISION IN NETWORKING */}
             <div className=" lg:text-6xl font-bold md:text-5xl
-            sm3:text-4xl">
+            sm3:text-4xl
+            sm1:text-3xl">
               <h1>
                 Precision In 
                 <span className=" text-[#383DAD]">
@@ -200,13 +202,15 @@ function HomePage() {
 
             {/* EXCELLENCE IN SECURITY */}
             <div className=" lg:text-6xl font-bold mb-2 md:text-5xl
-            sm3:text-4xl">
+            sm3:text-4xl
+            sm1:text-3xl">
               <h1>Excellence In Security</h1>
             </div>
 
             {/* THE REST OF THE TEXT */}
             <div className=" text-xl w-[40rem] mb-4 md:text-base
-            sm3:text-base sm3:w-[35rem]">
+            sm3:text-base sm3:w-[35rem]
+            sm1:text-base sm1:w-[28rem]">
               {/* <p>
                 Building lasting partnerships through integrity, innovation, and
                 unmatched service—
@@ -234,7 +238,7 @@ function HomePage() {
           xl:top-[2rem] xl:right-[16rem]
           heroSection-pic1
            ">
-            <img className=" rounded-[0.8rem]" src={HeroSectionImg1} alt="" />
+            <img className="sm1:w-[28rem] sm3:w-[auto] rounded-[0.8rem]" src={HeroSectionImg1} alt="" />
           </div>
 
           {/* PICTURE 2 */}
@@ -270,15 +274,18 @@ function HomePage() {
         <div  className="px-8 flex items-center justify-between py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8
-        sm3:px-8">
+        sm3:px-8
+        ">
           {/*ABOUT US SECTION WRITING SUPER BOX */}
           <div className=" lg:w-[45rem]
           md:w-[38rem]
-          sm3:w-[35rem]">
+          sm3:w-[35rem]
+          sm1:w-[28rem]">
             {/* HEADING */}
             <div className=" mb-4">
               <h1 className=" md:text-5xl font-bold
-              sm3:text-4xl">
+              sm3:text-4xl
+              sm1:text-3xl">
                 About <span className=" text-[#383DAD]">Us</span>
               </h1>
             </div>
@@ -293,7 +300,7 @@ function HomePage() {
 
           {/* ABOUT US SECTION PICTURE 1 */}
           <div>
-            <img className=" xl:w-[35rem] md:w-[34rem] rounded-[0.8rem] max-w-[34rem]" src={aboutUsSectionImg} alt="" />
+            <img className="sm1:w-[28rem] xl:w-[35rem] md:w-[34rem] rounded-[0.8rem] max-w-[34rem]" src={aboutUsSectionImg} alt="" />
           </div>
         </div>
 
@@ -316,12 +323,14 @@ function HomePage() {
         <div  className="flex flex-col py-20 2xl:px-10 3xl:px-20 relative 
         xl:px-8
         md:px-8
-        sm3:px-8">
+        sm3:px-8
+        px-8">
           {/* SERVICES SECTION WRITING SUPER BOX */}
-          <div className="w-[55rem]">
+          <div className="sm1:w-[50rem] sm3:w-[55rem] ">
             {/* HEADING */}
             <h1 className=" md:text-5xl font-bold mb-4
-            text-4xl">
+            sm3:text-4xl
+            text-3xl">
               <span className=" text-[#383DAD]">Services</span> We Provide
             </h1>
 
@@ -364,6 +373,7 @@ function HomePage() {
             md:justify-center md:content-center
             md:gap-y-8
             sm3:gap-8
+            sm1:gap-6
             ">
               {/* CARD 1 */}
               <ServicesCard
@@ -513,7 +523,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
           {/* CONTACT US PART 1 */}
-          <div className=" w-[30rem] h-[20rem]">
+          <div className=" w-[30rem] md:h-[20rem]">
             {/* CONTACT US HEADING */}
             <h1 className=" text-8xl font-bold">Contact <span className=" text-[#383DAD]">Us</span></h1>
 
@@ -525,7 +535,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
           {/* CONTACT US PART 2 */}
-          <div className=" flex flex-col text-xl relative right-[10rem] top-[2rem]">
+          <div className=" flex flex-col text-xl relative right-[2rem] lg:right-[10rem] top-[2rem]">
               {/* MOBILE */}
                 <p><span className=" font-bold">Mobile</span> : +91 - 9955440037 <br/><span className=" ml-[4.39rem]">+91 - 8986640037</span> </p>
 
@@ -553,7 +563,7 @@ Ensuring complete coverage of all critical areas for enhanced security.
 
 
         {/* FOOTER */}
-        <div className=" w-[100%] h-[10rem] bg-black"></div>
+        <div className=" w-[100%] sm3:h-[10rem] bg-black"></div>
       </div>
       {/* END OF ==MAIN-2== */}
     </div>

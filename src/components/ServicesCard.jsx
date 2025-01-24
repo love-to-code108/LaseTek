@@ -9,6 +9,8 @@ export const ServicesCard = (props) => {
     lg:w-[420px]
     md:w-[370px]
     sm3:w-[350px]
+    sm2:w-[330px]
+    sm1:w-[300px]
      rounded-[0.6rem]">
 
       {/* IMAGE */}
