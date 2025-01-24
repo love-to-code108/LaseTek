@@ -26,6 +26,15 @@ import { WhyChooseUsCard } from "./components/WhyChooseUsCard";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
+
+
+
+
+
+
+
+
+// ============== THE MAIN HOME PAGE =======================
 function HomePage() {
 
   const navigate = useNavigate();
@@ -78,7 +87,24 @@ function HomePage() {
 
 
   // ALWAYS START THE PAGE FROM TOP
-  scrollToTop();
+  // scrollToTop();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // DESKTOP VERSION    ==== MAX WIDTH = 1716 ====
   return (
@@ -105,6 +131,7 @@ function HomePage() {
         3xl:px-20
         2xl:py-4 2xl:pt-6 2xl:px-10 
          md:px-8 md:py-4
+         sm3:px-8 sm3:py-4
          
         ">
           {/* LOGO */}
@@ -113,7 +140,8 @@ function HomePage() {
           </div>
 
           {/* THE SECTIONS */}
-          <div className="flex items-center justify-evenly text-2xl w-[686px] ">
+          <div className="flex items-center justify-evenly xl:text-2xl w-[686px]
+          lg:text-xl sm3:text-xl">
             <button onClick={scrollToHome} className="navBarSections">Home</button>
             <button onClick={scrollToAboutUs} className="navBarSections">About Us</button>
             <button onClick={scrollToServicves} className="navBarSections">Services</button>
@@ -122,8 +150,8 @@ function HomePage() {
           </div>
 
           {/* CONTACT US BUTTON */}
-          <div className=" flex justify-center items-center text-3xl ">
-            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white rounded-[0.6rem]">
+          <div className=" flex justify-center items-center xl:text-3xl text-xl">
+            <button onClick={scrollToContactUs} className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white rounded-md">
               Contact Us
             </button>
           </div>
@@ -146,6 +174,7 @@ function HomePage() {
         <div ref={Home} className=" relative bottom-[8rem]"></div>
         <div  className="w-[100%] h-[96vh] flex items-center 2xl:pt-4 2xl:px-10 3xl:px-20 relative
         md:px-8 md:pt-4
+        sm3:px-8 sm3:pt-4
         heroSection-main
         
         ">
@@ -154,27 +183,30 @@ function HomePage() {
 
             {/* THE QUOTE HIGHLIGHTER */}
             <div className=" absolute top-[2.5rem]">
-              <img src={HeroSectionQuote} alt="" />
+              <img className=" sm3:w-[30rem]" src={HeroSectionQuote} alt="" />
             </div>
 
 
             {/* PRECISION IN NETWORKING */}
-            <div className=" lg:text-6xl font-bold md:text-5xl">
+            <div className=" lg:text-6xl font-bold md:text-5xl
+            sm3:text-4xl">
               <h1>
-                Precision In{" "}
+                Precision In 
                 <span className=" text-[#383DAD]">
-                  <span className=" text-[#FF3131]">N</span>etworking
+                  <span className=" text-[#FF3131]"> N</span>etworking
                 </span>
               </h1>
             </div>
 
             {/* EXCELLENCE IN SECURITY */}
-            <div className=" lg:text-6xl font-bold mb-2 md:text-5xl">
+            <div className=" lg:text-6xl font-bold mb-2 md:text-5xl
+            sm3:text-4xl">
               <h1>Excellence In Security</h1>
             </div>
 
             {/* THE REST OF THE TEXT */}
-            <div className=" text-xl w-[40rem] mb-4 md:text-xl">
+            <div className=" text-xl w-[40rem] mb-4 md:text-base
+            sm3:text-base sm3:w-[35rem]">
               {/* <p>
                 Building lasting partnerships through integrity, innovation, and
                 unmatched service—
