@@ -23,7 +23,7 @@ export const ServicesWeProvideCardV2 = (props) => {
 
             {/* THE PARAGRAPH */}
             <p className="
-            sm1:text-sm
+            sm1:text-base
             ">{props.para}</p>
 
 

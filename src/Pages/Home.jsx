@@ -14,7 +14,13 @@ import servicesWeProvideImg3 from "../assets/img3.png"
 import cctvImg1 from "../assets/Version2/cctv1.png"
 import cctvImg2 from "../assets/Version2/cctv2.png"
 import cctvImg3 from "../assets/Version2/cctv3.png"
+// WHY CHOOSE US SECTION 
+import whyChooseUsimg1 from "../assets/Version2/gears.png" 
+import whyChooseUsimg2 from "../assets/Version2/favorites.png" 
+import whyChooseUsimg3 from "../assets/Version2/team.png" 
+import whyChooseUsimg4 from "../assets/Version2/trophy.png" 
 import { LineBreakV2 } from "../components/LineBreakV2"
+import { WhyChooseUsSectionV2 } from "../components/WhyChooseUsSectionV2"
 
 
 
@@ -398,8 +404,20 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
       {/* OUR ACHIEVEMENTS  */}
-      <div>
+      <div className=" 
+      sm1:py-10 sm1:mb-[6rem]
+      ">
 
 
         {/* HEADING */}
@@ -420,7 +438,7 @@ export const HomePage = () => {
 
         {/* THREE STATS */}
         <div className=" flex w-[100%] sm1:justify-around
-        sm1:mb-[8rem]
+        
         " >
 
 
@@ -459,7 +477,99 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
+
+
+
       {/* WHY CHOOSE US */}
+      <div className=" flex justify-between 
+        sm1:py-10 sm1:mb-[6rem]
+        ">
+
+
+
+          {/* NETWORKING SERVICE HEADING */}
+          <div className="
+          sm1:w-[30rem]
+          ">
+            <h1 className=" text-4xl font-bold mb-2">Why Choose Us</h1>
+            <p className="">Our approach is simple—become a partner in our clients' challenges and work together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider; you’re gaining a dedicated partner committed to helping you succeed.</p>
+          </div>
+
+
+          {/* THE LINE THAT DIVIDES */}
+          <div className=" flex">
+            <div className=" bg-[var(--darkGrey)] w-[1px]"></div>
+
+
+          {/* ALL THE CARDS IN DIV COLUMN */}
+          <div className=" flex flex-col items-start">
+
+
+            {/* CARD 1 */}
+            <WhyChooseUsSectionV2
+            heading = "Tailored Solutions"
+            text = "We understand that every business is unique. That’s why we offer customized networking and security solutions designed to meet your specific needs."
+            img = {whyChooseUsimg1}
+            />
+           <LineBreakV2/>
+
+
+
+           {/* CARD 2 */}
+           <WhyChooseUsSectionV2
+            heading = "Commitment to Excellence"
+            text = "As an MSME-certified company, we are dedicated to delivering top-quality services with a focus on precision, innovation, and timely completion of projects."
+            img = {whyChooseUsimg2}
+            />
+           <LineBreakV2/>
+
+
+
+
+           {/* CARD 3 */}
+           <WhyChooseUsSectionV2
+            heading = "Trusted by Industry Leaders"
+            text = "Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."
+            img = {whyChooseUsimg3}
+            />
+           <LineBreakV2/>
+
+
+
+           {/* CARD 4 */}
+           <WhyChooseUsSectionV2
+            heading = "Proven Expertise"
+            text = "Our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."
+            img = {whyChooseUsimg4}
+            />
+           
+           
+
+
+
+           
+          </div>
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
