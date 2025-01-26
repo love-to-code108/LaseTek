@@ -34,6 +34,14 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
+
+
+
           {/* HERO SECTION  */}
             <div className="flex flex-col relative h-[30rem]
             sm1:mb-[3rem] sm1:py-10">
@@ -43,7 +51,7 @@ export const HomePage = () => {
               <div className=" w-[32rem]">
 
                 {/* PRECISION IN NETWORKING */}
-                  <h1 className=" text-5xl font-bold">Precision In <span>Networking</span></h1>
+                  <h1 className=" text-5xl font-bold">Precision In <span  className=" text-[var(--red)]">Networking</span></h1>
                     
                 {/* EXCELLENCE IN SECURITY */}
                 <h1 className=" text-5xl font-bold mb-2">Excellence in Security</h1>
@@ -53,9 +61,6 @@ export const HomePage = () => {
                   
 
               </div>
-
-
-
 
 
                 {/* HERO SECTION IMAGES WRAPPER */}
@@ -85,6 +90,11 @@ export const HomePage = () => {
                 </div>
 
             </div>
+
+
+
+
+
 
 
 
@@ -126,6 +136,12 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
+
       {/* ABOUT US */}
         <div className=" flex flex-col
         sm1:py-10">
@@ -159,10 +175,20 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
+
+
+
+
       {/* SERVICES WE PROVIDE */}
       <div className=" flex flex-col
       sm1:py-10">
         
+
         {/* SERVICES SECTION WRITING SUPER BOX */}
         <div className="sm1:w-[50rem] sm3:w-[55rem] ">
             {/* HEADING */}
@@ -207,7 +233,40 @@ export const HomePage = () => {
       </div>
 
 
+
+
+
+
+
+
+
+
+
       {/* NETWORKING SERVICES */}
+        <div className=" flex justify-between">
+
+
+
+          {/* NETWORKING SERVICE HEADING */}
+          <div>
+            <h1>Networking Services</h1>
+          </div>
+
+
+          {/* THE LINE THAT DIVIDES */}
+            <div className=" bg-[var(--darkGrey)] w-[1px]"></div>
+
+
+          {/* ALL THE CARDS IN DIV COLUMN */}
+          <div className=" flex flex-col ">
+
+          </div>
+
+
+        </div>
+
+
+
 
 
 
