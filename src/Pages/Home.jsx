@@ -9,6 +9,9 @@ import aboutUsSectionImg from "../assets/Version2/aboutUsSectionImg.png"
 import { ServicesWeProvideCardV2 } from "../components/ServicesWeProvideCardV2"
 // SERVICES WE PROVIDE
 import servicesWeProvideImg1 from "../assets/img1.png"
+import servicesWeProvideImg2 from "../assets/img2.png"
+import servicesWeProvideImg3 from "../assets/img3.png"
+import { LineBreakV2 } from "../components/LineBreakV2"
 
 
 
@@ -246,8 +249,8 @@ export const HomePage = () => {
 
 
       {/* NETWORKING SERVICES */}
-        <div className=" flex justify-between
-        sm1:py-10
+        <div className=" flex justify-between 
+        sm1:py-10 sm1:w-[]
         ">
 
 
@@ -259,17 +262,49 @@ export const HomePage = () => {
 
 
           {/* THE LINE THAT DIVIDES */}
+          <div className=" flex">
             <div className=" bg-[var(--darkGrey)] w-[1px]"></div>
 
 
           {/* ALL THE CARDS IN DIV COLUMN */}
-          <div className=" flex flex-col ">
+          <div className=" flex flex-col items-start">
+
+
+            {/* CARD 1 */}
             <ServicesWeProvideCardV2 
             heading = "Network Design and Consultant"
-            para = "Setting up a network doesn’t have to be complicated. At LaseTek, we specialize in professional installation and configuration of network systems tailored to your needs. From connecting devices to ensuring optimal performance, we handle everything with precision and care. Let us simplify the process so you can focus on what matters most—your business."
+            para = "At LaseTek, we design tailored network solutions that ensure seamless connectivity, reliability, and scalability. Our consultation services focus on understanding your unique needs, providing expert guidance to build networks that support your growth. Whether upgrading an existing system or starting from scratch, we’re here to simplify the process and keep you connected."
             img = {servicesWeProvideImg1} />
+           <LineBreakV2/>
+
+
+
+           {/* CARD 2 */}
+           <ServicesWeProvideCardV2 
+           heading = "Network Installation and Configuration"
+
+           para = "Setting up a network doesn’t have to be complicated. At LaseTek, we specialize in professional installation and configuration of network systems tailored to your needs. From connecting devices to ensuring optimal performance, we handle everything with precision and care. Let us simplify the process so you can focus on what matters most—your business"
+           img = {servicesWeProvideImg2}
+           
+           />
+           <LineBreakV2/>
+
+
+
+
+           {/* CARD 3 */}
+           <ServicesWeProvideCardV2 
+           heading = "Network Optimization and Device Integration"
+           para = "At LaseTek, we ensure your network runs at peak performance by optimizing every connection and integrating devices seamlessly. Our solutions are designed to enhance speed, reliability, and efficiency, making your systems work smarter together. Let us help you get the most out of your network."
+           img = {servicesWeProvideImg3}
+           
+           />
            
 
+
+
+           
+          </div>
           </div>
 
 
