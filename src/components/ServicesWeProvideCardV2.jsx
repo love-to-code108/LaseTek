@@ -23,7 +23,7 @@ export const ServicesWeProvideCardV2 = (props) => {
 
             {/* THE PARAGRAPH */}
             <p className="
-            sm1:text-base
+            sm1:text-sm
             ">{props.para}</p>
 
 
@@ -31,7 +31,7 @@ export const ServicesWeProvideCardV2 = (props) => {
 
 
         {/* THE IMAGE */}
-        <div className=" shadow-lg 
+        <div className=" drop-shadow-xl 
         sm1:ml-[2rem]
         ">
             <img className=" object-cover rounded-[4px]

@@ -40,10 +40,10 @@ export const HomePage = () => {
   return (
     
     // ============= MAIN 1 =============== START
-    <div className=" flex justify-center bg-black">
+    <div className=" flex justify-center bg-[var(--lighterGrey)]">
 
         {/* =============== MAIN 2 ============= START*/}
-        <div className=" flex flex-col bg-white max-[1760px] w-[100%]
+        <div className=" flex flex-col bg-[var(--white)] max-w-[1700px] w-[100%]
         sm1:px-8">
       
 
@@ -72,7 +72,7 @@ export const HomePage = () => {
                 <h1 className=" text-5xl font-bold mb-2">Excellence in Security</h1>
 
                 {/* PARAGRAPH */}
-                <p className=" w-[30rem] text-base">Building lasting partnerships through integrity, innovation, and unmatched service— <span className=" text-[var(--red)]">trusted by industry leaders like Tata Steel</span> and powered by global technology brands</p>
+                <p className=" w-[30rem] sm1:text-sm">Building lasting partnerships through integrity, innovation, and unmatched service— <span className=" text-[var(--red)]">trusted by industry leaders like Tata Steel</span> and powered by global technology brands</p>
                   
 
               </div>
@@ -119,15 +119,18 @@ export const HomePage = () => {
 
 
       {/* THE QUOTE */}
-          <div className=" flex justify-center items-center bg-[var(--lastekBlue)]
-          sm1:py-10 sm1:mb-[1rem] relative
+          <div className=" flex justify-end items-center bg-[var(--lastekBlue)]
+          sm1:py-10 sm1:mb-[1rem] sm1:w-[100vw] right-[2rem] relative 
+          
           ">
 
             
 
 
             {/* THE QUOTE */}
-            <div className=" text-4xl text-white">
+            <div className=" text-4xl text-white relative 
+            sm1:right-[8rem]
+            ">
               <p>Where Vision Meets Aspiration</p>
             </div>
 
@@ -135,7 +138,7 @@ export const HomePage = () => {
             {/* QUOTE IMG 1 */}
             <div>
                 <img className=" absolute 
-                sm1:w-[5rem] bottom-0 right-[6rem]
+                sm1:w-[5rem] bottom-0 right-[2rem]
                 "
                  src={doubleQuotesImg} alt="" />
             </div>
@@ -163,14 +166,14 @@ export const HomePage = () => {
 
           {/* HEADING */}
           <div className="  font-bold 
-          sm1:text-5xl sm1:mb-2
+          sm1:text-4xl sm1:mb-2
           ">
             <h1>About Us</h1>
           </div>
 
           {/* PARAGRAPH */}
           <div className=" 
-          sm1:text-base sm1:w-[35rem] mb-6">
+          sm1:text-sm sm1:w-[35rem] mb-6">
             <p>At the heart of LaseTek are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a Network Service Provider but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.</p>
           </div>
 
@@ -208,19 +211,23 @@ export const HomePage = () => {
         <div className="sm1:w-[50rem] sm3:w-[55rem] ">
             {/* HEADING */}
             <h1 className=" md:text-5xl font-bold mb-4
-            sm3:text-4xl
-            text-5xl">
+            sm1:text-4xl
+            ">
               <span className="">Services</span> We Provide
             </h1>
 
             {/* OTHER TEXT */}
-            <div className="md:text-xl">
+            <div className="
+            sm1:text-sm
+            md:text-xl">
             We take pride in being trusted partners to industry leaders, including Tata Steel Ltd and many others across multiple locations. Our partnerships with global technology providers like Cisco, Fortigate, R&M, and Hikvision enable us to deliver world-class solutions that exceed expectations.
             <br />
             <br />
 
             <span className=" text-[#383dad] font-bold text-2xl">Our Client Base:</span>
-            <ul className=" list-disc ml-6">
+            <ul className=" list-disc ml-6 
+             
+            ">
               <li><span className=" font-bold">Tata Steel Ltd</span> (Jamshedpur, Jharia, Noamundi, Joda)</li>
               <li className=" font-bold"> Tata Steel Ltd Meramandali</li>
               <li>Rourkela, Bokaro, Durgapur, Bhilai</li>
@@ -231,7 +238,9 @@ export const HomePage = () => {
 
             <span className=" text-[#383dad] font-bold text-2xl">Our Technology Partners:</span>
             
-            <ul className=" list-disc ml-6">
+            <ul className=" list-disc ml-6
+            
+            ">
               <li><span className=" font-bold text-[#ff3131]">Cisco:</span> Advanced networking switches for seamless connectivity</li>
               <li><span className=" font-bold text-[#ff3131]">Fortigate:</span> Cutting-edge firewall security systems to safeguard your business</li>
               <li><span className=" font-bold text-[#ff3131]">R&M:</span> High-quality networking components for robust infrastructure
@@ -270,7 +279,9 @@ export const HomePage = () => {
 
 
           {/* NETWORKING SERVICE HEADING */}
-          <div className=" text-4xl font-bold">
+          <div className=" text-4xl font-bold
+          sm1:w-[14rem]
+          ">
             <h1>Networking Services</h1>
           </div>
 
@@ -334,14 +345,14 @@ export const HomePage = () => {
 
       {/* CCTV SERVICES */}
       <div className=" flex justify-between 
-        sm1:py-10 sm1:mb-[4rem]
+        sm1:py-10 sm1:mb-[4rem] 
         ">
 
 
 
           {/* NETWORKING SERVICE HEADING */}
           <div className=" text-4xl font-bold
-          sm1:w-[20rem]
+          sm1:w-[14rem]
           ">
             <h1>CCTV Services</h1>
           </div>
@@ -422,7 +433,7 @@ export const HomePage = () => {
 
         {/* HEADING */}
         <div className=" 
-        sm1:text-5xl font-bold mb-2
+        sm1:text-4xl font-bold mb-2
         ">
           <h1>Our Achievements</h1>
         </div>
@@ -430,7 +441,8 @@ export const HomePage = () => {
 
         {/* THE PARAGRAPH */}
           <div className=" 
-          sm1:mb-[4rem]
+          sm1:mb-[4rem] sm1:text-sm
+
           ">
             <p>At LaseTek, we take pride in our achievements, having successfully completed over 100 projects for esteemed clients like Tata Steel. With 40+ years of combined expertise, we’ve built strong partnerships with global technology leaders such as Cisco, Fortigate, and Hikvision. Our commitment to quality and innovation has positioned us as a trusted provider in networking and security solutions.</p>
           </div>
@@ -443,27 +455,33 @@ export const HomePage = () => {
 
 
           {/* STAT 1 */}
-            <div className=" flex flex-col justify-center items-center text-xl">
+            <div className=" flex flex-col justify-center items-center text-sm">
               <p>Project Completed</p>
-              <h1 className=" text-7xl font-bold">100+</h1>
+              <h1 className=" text-7xl font-bold
+              sm1:text-4xl
+              ">100+</h1>
             </div>
 
             <div className=" w-[2px] bg-[var(--darkGrey)]"></div>
 
 
           {/* STAT 2  */}
-          <div className=" flex flex-col justify-center items-center text-xl">
+          <div className=" flex flex-col justify-center items-center text-sm">
               <p>Meters of Wire Laid</p>
-              <h1 className=" text-7xl font-bold">10,000 m+</h1>
+              <h1 className=" text-7xl font-bold
+              sm1:text-4xl
+              ">10,000 m+</h1>
             </div>
 
             <div className=" w-[2px] bg-[var(--darkGrey)]"></div>
 
 
           {/* STAT 3 */}
-          <div className=" flex flex-col justify-center items-center text-xl">
+          <div className=" flex flex-col justify-center items-center text-sm">
               <p>Switches Installed</p>
-              <h1 className=" text-7xl font-bold">1000+</h1>
+              <h1 className=" text-7xl font-bold
+              sm1:text-4xl
+              ">1000+</h1>
             </div>
 
         </div>
@@ -494,10 +512,10 @@ export const HomePage = () => {
 
           {/* NETWORKING SERVICE HEADING */}
           <div className="
-          sm1:w-[30rem]
+          sm1:w-[28rem] sm1:mr-[2rem]
           ">
             <h1 className=" text-4xl font-bold mb-2">Why Choose Us</h1>
-            <p className="">Our approach is simple—become a partner in our clients' challenges and work together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider; you’re gaining a dedicated partner committed to helping you succeed.</p>
+            <p className=" text-sm">Our approach is simple—become a partner in our clients' challenges and work together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider; you’re gaining a dedicated partner committed to helping you succeed.</p>
           </div>
 
 

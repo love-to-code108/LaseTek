@@ -20,14 +20,14 @@ export const WhyChooseUsSectionV2 = (props) => {
 
 
                 {/* HEADING */}
-                <h1 className="
-                sm1:text-2xl font-bold
+                <h1 className=" font-bold
+                sm1:text-xl sm1:mb-2  
                 ">{props.heading}</h1>
 
 
                 {/* PARAGRAPH */}
                 <p className="
-                sm1:text-base
+                sm1:text-sm
                 ">{props.text}</p>
 
             </div>

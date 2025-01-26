@@ -9,13 +9,21 @@ import logo from "./assets/Version2/Logo.svg"
 
 function App(){
   return (
-    <div>
+    <div >
+      <div className=" flex justify-center w-[100%] sticky top-0 z-50">
       <Navbar/>
+      </div>
+      
     <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
     </Routes>
+
+
+    <div className=" w-[100%] flex justify-center">
     <ContactUs/>
+      </div>
+    
     </div>
   )
 }
@@ -28,14 +36,14 @@ const Navbar = () => {
 
   return(
     <nav className=" flex items-center justify-between
-    sm1:px-8 sm1:text-xl sm1:py-4 sticky top-0 z-50 bg-[#ffffff]">
+    sm1:px-8 sm1:text-sm sm1:py-4  bg-[#ffffff] max-w-[1700px] w-[100%]">
 
       {/* THE LOGO */}
       <a to="/"><img className=" sm1:w-[11rem]" src={logo} alt="" /></a>
 
       {/* THE NAVIGATION BAR */}
         <div className=" flex items-center justify-between bg-[var(--grey)]
-        sm1:px-1 sm1:py-1 sm1:mr-[2.5rem] ">
+        sm1:px-1 sm1:py-1 sm1:mr-[4.4rem] ">
           <NavLink className="sm1:px-4 sm1:py-1" to="/">Home</NavLink>
           <NavLink className="sm1:px-4 sm1:py-1" to="/gallery">Gallery</NavLink>
         </div>
@@ -52,7 +60,7 @@ const Navbar = () => {
 const ContactUs = () => {
 
   return(
-    <div id="ContactUs" className="">
+    <div id="ContactUs" className=" flex flex-col items w-[100%] max-w-[1700px]">
       
 
 
@@ -76,10 +84,12 @@ const ContactUs = () => {
 
 
         {/* THE ADDRESS */}
-        <div className=" text-lg">
+        <div className=" sm1:text-sm">
 
           {/* PHONE NUMBER */}
-            <p><span className=" font-bold">Mobile</span> : +91 - 9955440037 <br /> <span className=" ml-[4rem]">+91 - 8986640037</span> </p>
+            <p><span className=" font-bold">Mobile</span> : +91 - 9955440037 <br /> <span className=" 
+            sm1:ml-[3rem]
+            ">+91 - 8986640037</span> </p>
 
             {/* EMAIL */}
             <p> <span className=" font-bold">E-mail</span> : rksri@lasetek.in</p>
