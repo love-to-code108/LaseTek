@@ -65,42 +65,11 @@ export const Gallery = () => {
     <div className="main-1 bg-[#f3f3f3] w-[100%] flex justify-center items-center z-0">
       {/* ==MAIN 2==  */}
       <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px] relative">
-        {/* NAVIGATION BAR */}
-        <div
-          className=" bg-white w-[100%] flex justify-between sticky top-0 z-[80]
-            3xl:px-20
-            2xl:py-4 2xl:pt-6 2xl:px-10 
-             md:px-8 md:py-4
-             px-8 py-4
-             
-            "
-        >
-          {/* LOGO */}
-          <div onClick={GoToHome} className=" cursor-pointer">
-            <img src={logo} alt="" />
-          </div>
 
-          {/* THE SECTIONS */}
-          <div className="flex items-center justify-evenly 
-          xl:text-2xl w-[20rem] text-xl">
-            <button onClick={GoToHome} className="navBarSections">
-              Home
-            </button>
-            <button onClick={scrollToTop} className="navBarSections text-[#383dad]">
-              Gallery
-            </button>
-          </div>
 
-          {/* CONTACT US BUTTON */}
-          <div className=" flex justify-center items-center text-xl xl:text-3xl ">
-            <button
-              onClick={scrollToContactUs}
-              className=" px-4 py-3 border-2 border-black hover:bg-black hover:text-white rounded-md"
-            >
-              Contact Us
-            </button>
-          </div>
-        </div>
+
+
+       
 
 
 
@@ -114,10 +83,12 @@ export const Gallery = () => {
         xl:px-8
         md:px-8
         px-8">
-          <h1 className=" text-8xl font-bold mb-4">
+          <h1 className="  font-bold 
+          sm1:text-6xl sm1:mb-2
+          ">
             Gallery
           </h1>
-          <p className="text-xl w-[50rem]">Step into our journey through this gallery, where each image tells a story of trust, dedication, and innovation. From the projects we’ve proudly completed to the partnerships we deeply value, this is a glimpse of the work that inspires us every day.</p>
+          <p className="sm1:text-base w-[50rem]">Step into our journey through this gallery, where each image tells a story of trust, dedication, and innovation. From the projects we’ve proudly completed to the partnerships we deeply value, this is a glimpse of the work that inspires us every day.</p>
         </div>
 
 
@@ -164,54 +135,7 @@ export const Gallery = () => {
 
 
 
-        {/* CONTACT US */}
-        <div ref={ContactUs}
-          className="flex justify-between py-20 2xl:px-10 3xl:px-20 relative xl:px-8
-        md:px-8
-        px-8"
-        >
-          {/* CONTACT US PART 1 */}
-          <div className=" w-[30rem] md:h-[20rem]">
-            {/* CONTACT US HEADING */}
-            <h1 className=" text-8xl font-bold">
-              Contact <span className=" text-[#383DAD]">Us</span>
-            </h1>
-
-            {/* WRITING BELOW THE CONTACT US SECTION */}
-            <div className=" w-[100%] flex justify-end text-xl">
-              <p className=" mr-6">
-                Your Business Deserves the Best—
-                <span className=" text-[#FF3131]">Let’s Chat!</span>
-              </p>
-            </div>
-          </div>
-
-
-
-          {/* CONTACT US PART 2 */}
-          <div className=" flex flex-col text-xl relative right-[2rem] md:right-[10rem] top-[2rem]">
-            {/* MOBILE */}
-            {/* MOBILE */}
-            <p><span className=" font-bold">Mobile</span> : +91 - 9955440037 <br/><span className=" ml-[4.39rem]">+91 - 8986640037</span> </p>
-
-            {/* EMAIL */}
-            <p>
-              <span className=" font-bold">E-mail</span> : rksri@lasetek.in
-            </p>
-
-            <br />
-
-            {/* ADDRESS */}
-            <p className=" text-2xl font-bold">Lase Tek</p>
-            <p>410, New Layout</p>
-            <p>Sitaramdera, P.O. Agrico</p>
-            <p>Jamshedpur, Jharkhand</p>
-            <p>India - 831009</p>
-          </div>
-        </div>
-
-        {/* FOOTER */}
-        <div className=" w-[100%] sm3:h-[10rem] bg-black"></div>
+        
 
 
 
