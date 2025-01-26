@@ -2,7 +2,10 @@
 import heroSectionImg1 from "../assets/Version2/HeroSection1.png"
 import heroSectionImg2 from "../assets/Version2/HeroSection3.png"
 import heroSectionImg3 from "../assets/Version2/HeroSection2.png"
+// QUOTE SECTION 
 import doubleQuotesImg from "../assets/Version2/dobuleQuotes.svg"
+// ABOUT US SECTION
+import aboutUsSectionImg from "../assets/Version2/aboutUsSectionImg.png"
 
 
 
@@ -92,7 +95,7 @@ export const HomePage = () => {
 
       {/* THE QUOTE */}
           <div className=" flex justify-center items-center bg-[var(--lastekBlue)]
-          sm1:py-10 sm1:mb-[4rem] relative
+          sm1:py-10 sm1:mb-[1rem] relative
           ">
 
             
@@ -117,8 +120,37 @@ export const HomePage = () => {
           </div>
 
 
-      {/* ABOUT US */}
 
+
+
+
+
+
+      {/* ABOUT US */}
+        <div className=" flex flex-col
+        sm1:py-10">
+
+          {/* HEADING */}
+          <div className="  font-bold 
+          sm1:text-5xl sm1:mb-2
+          ">
+            <h1>About Us</h1>
+          </div>
+
+          {/* PARAGRAPH */}
+          <div className=" 
+          sm1:text-base sm1:w-[35rem] mb-6">
+            <p>At the heart of LaseTek are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a Network Service Provider but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.</p>
+          </div>
+
+
+          {/* IMAGE */}
+          <div className=" w-[100%] flex justify-end">
+            <img className=" 
+            sm1:w-[35rem]" src={aboutUsSectionImg} alt="" />
+          </div>
+
+        </div>
 
       {/* SERVICES WE PROVIDE */}
 
