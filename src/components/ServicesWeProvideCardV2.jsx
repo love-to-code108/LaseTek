@@ -19,11 +19,13 @@ export const ServicesWeProvideCardV2 = (props) => {
             {/* HEADING */}
             <h1 className=" text-2xl font-bold
             sm1:mb-6
+            md:text-3xl
             ">{props.heading}</h1>
 
             {/* THE PARAGRAPH */}
             <p className="
             sm1:text-sm
+            md:text-base
             ">{props.para}</p>
 
 
@@ -36,6 +38,7 @@ export const ServicesWeProvideCardV2 = (props) => {
         ">
             <img className=" object-cover rounded-[4px]
              sm1:w-[14rem] sm1:h-[18rem] 
+             md:w-[15rem] md:h-[20rem]
             " src={props.img} alt="" />
         </div>
 

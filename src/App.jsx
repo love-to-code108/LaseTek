@@ -40,6 +40,8 @@ const Navbar = () => {
       sm1:px-8 sm1:text-sm sm1:py-4
       sm2:px-[3rem]
       sm3:px-[4rem]
+      md:text-base
+      lg:text-lg lg:px-[5rem]
       ">
 
       {/* THE LOGO */}
@@ -47,7 +49,10 @@ const Navbar = () => {
 
       {/* THE NAVIGATION BAR */}
         <div className=" flex items-center justify-between bg-[var(--grey)]
-        sm1:px-1 sm1:py-1 sm1:mr-[4.4rem] ">
+        sm1:px-1 sm1:py-1 sm1:mr-[4.4rem] 
+        md:mr-[4rem]
+        lg:mr-[3.2rem]
+        ">
           <NavLink className="sm1:px-4 sm1:py-1" to="/">Home</NavLink>
           <NavLink className="sm1:px-4 sm1:py-1" to="/gallery">Gallery</NavLink>
         </div>
@@ -74,6 +79,7 @@ const ContactUs = () => {
         <div className=" flex justify-between mb-8 px-8
         sm1:px-[3rem]
         sm3:px-[4rem]
+        lg:px-[5rem]
         ">
 
         {/* THE BIG TEXT */}
@@ -93,7 +99,8 @@ const ContactUs = () => {
 
 
         {/* THE ADDRESS */}
-        <div className=" sm1:text-sm">
+        <div className=" sm1:text-sm
+        md:text-lg">
 
           {/* PHONE NUMBER */}
             <p><span className=" font-bold">Mobile</span> : +91 - 9955440037 <br /> <span className=" 
