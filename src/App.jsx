@@ -36,7 +36,10 @@ const Navbar = () => {
 
   return(
     <nav className=" flex items-center justify-between
-    sm1:px-8 sm1:text-sm sm1:py-4  bg-[#ffffff] max-w-[1700px] w-[100%]">
+      bg-[#ffffff] max-w-[1700px] w-[100%]
+      sm1:px-8 sm1:text-sm sm1:py-4
+      sm2:px-[3rem]
+      ">
 
       {/* THE LOGO */}
       <a to="/"><img className=" sm1:w-[11rem]" src={logo} alt="" /></a>

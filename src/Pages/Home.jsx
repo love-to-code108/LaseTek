@@ -44,7 +44,7 @@ export const HomePage = () => {
 
         {/* =============== MAIN 2 ============= START*/}
         <div className=" flex flex-col bg-[var(--white)] max-w-[1700px] w-[100%]
-        sm1:px-8">
+        sm1:px-8 sm2:px-[3rem]">
       
 
 
@@ -91,7 +91,8 @@ export const HomePage = () => {
 
                   {/* IMAGE 2 */}
                   <img className="absolute bottom-0 object-cover
-                  sm1:left-[43%] sm1:w-[16rem] sm1:h-[16rem]"
+                  sm1:left-[43%] sm1:w-[16rem] sm1:h-[16rem]
+                  sm2:left-[43%] sm2:w-[18rem] sm2:h-[18rem]"
 
                     src={heroSectionImg2} alt="" />
 
@@ -99,7 +100,7 @@ export const HomePage = () => {
 
                   {/* IMAGE 3 */}
                   <img className="absolute bottom-0 right-0 object-cover 
-                  sm1:w-[27%] sm1:h-[27rem] "
+                  sm1:w-[27%] sm1:h-[29rem] "
 
                    src={heroSectionImg3} alt="" />
                 </div>
@@ -119,8 +120,9 @@ export const HomePage = () => {
 
 
       {/* THE QUOTE */}
-          <div className=" flex justify-end items-center bg-[var(--lastekBlue)]
-          sm1:py-10 sm1:mb-[1rem] sm1:w-[100vw] right-[2rem] relative 
+          <div className=" flex justify-end items-center bg-[var(--lastekBlue)] relative
+          sm1:py-10 sm1:mb-[1rem] sm1:w-[100vw] sm1:right-[2rem] 
+          sm2:right-[3rem] 
           
           ">
 
@@ -162,7 +164,8 @@ export const HomePage = () => {
 
       {/* ABOUT US */}
         <div className=" flex flex-col
-        sm1:py-10">
+        sm1:py-10 
+        ">
 
           {/* HEADING */}
           <div className="  font-bold 
@@ -173,7 +176,9 @@ export const HomePage = () => {
 
           {/* PARAGRAPH */}
           <div className=" 
-          sm1:text-sm sm1:w-[35rem] mb-6">
+          sm1:text-sm sm1:w-[33rem] mb-6
+          sm2:
+          ">
             <p>At the heart of LaseTek are our core values integrity, honesty, innovation, and respect for people. We believe that true success lies not only in providing exceptional products and services as a Network Service Provider but also in fostering public trust and conducting ourselves as responsible corporate citizens. Our approach is simple becoming a partner, in our client's challenges and working together to create sustainable, long-term solutions. With LaseTek, you’re not just choosing a service provider you’re gaining a dedicated partner committed to helping you succeed.</p>
           </div>
 
@@ -281,6 +286,7 @@ export const HomePage = () => {
           {/* NETWORKING SERVICE HEADING */}
           <div className=" text-4xl font-bold
           sm1:w-[14rem]
+          
           ">
             <h1>Networking Services</h1>
           </div>

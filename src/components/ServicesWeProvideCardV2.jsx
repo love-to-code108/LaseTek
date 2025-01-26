@@ -35,7 +35,7 @@ export const ServicesWeProvideCardV2 = (props) => {
         sm1:ml-[2rem]
         ">
             <img className=" object-cover rounded-[4px]
-             sm1:w-[20rem] sm1:h-[18rem] 
+             sm1:w-[14rem] sm1:h-[18rem] 
             " src={props.img} alt="" />
         </div>
 

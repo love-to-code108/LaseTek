@@ -7,7 +7,7 @@ export const WhyChooseUsSectionV2 = (props) => {
     sm1:w-[30rem] sm1:mb-12 sm1:pl-6
     ">
         {/* IMAGE */}
-        <div className=" w-[7rem]">
+        <div className=" w-[5rem]">
             <img src={props.img} alt="" />
         </div>
 
