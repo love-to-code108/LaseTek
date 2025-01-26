@@ -39,6 +39,7 @@ const Navbar = () => {
       bg-[#ffffff] max-w-[1700px] w-[100%]
       sm1:px-8 sm1:text-sm sm1:py-4
       sm2:px-[3rem]
+      sm3:px-[4rem]
       ">
 
       {/* THE LOGO */}
@@ -63,12 +64,17 @@ const Navbar = () => {
 const ContactUs = () => {
 
   return(
-    <div id="ContactUs" className=" flex flex-col items w-[100%] max-w-[1700px]">
+    <div id="ContactUs" className=" flex flex-col items w-[100%] max-w-[1700px]
+    
+    ">
       
 
 
       {/* THE WRAPPER */}
-        <div className=" flex justify-between mb-8 px-8">
+        <div className=" flex justify-between mb-8 px-8
+        sm1:px-[3rem]
+        sm3:px-[4rem]
+        ">
 
         {/* THE BIG TEXT */}
           <div className=" flex flex-col w-[18rem]">

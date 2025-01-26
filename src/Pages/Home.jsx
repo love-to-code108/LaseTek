@@ -44,7 +44,10 @@ export const HomePage = () => {
 
         {/* =============== MAIN 2 ============= START*/}
         <div className=" flex flex-col bg-[var(--white)] max-w-[1700px] w-[100%]
-        sm1:px-8 sm2:px-[3rem]">
+        sm1:px-8 
+        sm2:px-[3rem]
+        sm3:px-[4rem]
+        ">
       
 
 
@@ -58,8 +61,10 @@ export const HomePage = () => {
 
 
           {/* HERO SECTION  */}
-            <div className="flex flex-col relative h-[30rem]
-            sm1:mb-[3rem] sm1:py-10">
+            <div className="flex flex-col relative 
+            sm1:mb-[3rem] sm1:py-10 sm1:h-[30rem]
+            sm3:h-[33rem]
+            ">
 
 
               {/* HERO SECTION WRITING WRAPPER */}
@@ -84,7 +89,9 @@ export const HomePage = () => {
 
                   {/* IMAGE 1 */}
                   <img className=" absolute bottom-0 left-0 
-                  sm1:h-auto sm1:w-[40%]" 
+                  sm1:h-auto sm1:w-[40%]
+                  sm3:w-[44%]
+                  " 
                   src={heroSectionImg1} alt="" />
 
 
@@ -92,7 +99,8 @@ export const HomePage = () => {
                   {/* IMAGE 2 */}
                   <img className="absolute bottom-0 object-cover
                   sm1:left-[43%] sm1:w-[16rem] sm1:h-[16rem]
-                  sm2:left-[43%] sm2:w-[18rem] sm2:h-[18rem]"
+                  sm2:left-[43%] sm2:w-[18rem] sm2:h-[18rem]
+                  sm3:left-[47%] sm3:w-[16rem] sm3:h-[22rem]"
 
                     src={heroSectionImg2} alt="" />
 
@@ -100,7 +108,8 @@ export const HomePage = () => {
 
                   {/* IMAGE 3 */}
                   <img className="absolute bottom-0 right-0 object-cover 
-                  sm1:w-[27%] sm1:h-[29rem] "
+                  sm1:w-[27%] sm1:h-[29rem] 
+                  sm3:w-[27%] sm3:h-[31rem]"
 
                    src={heroSectionImg3} alt="" />
                 </div>
@@ -123,6 +132,7 @@ export const HomePage = () => {
           <div className=" flex justify-end items-center bg-[var(--lastekBlue)] relative
           sm1:py-10 sm1:mb-[1rem] sm1:w-[100vw] sm1:right-[2rem] 
           sm2:right-[3rem] 
+          sm3:right-[4rem]
           
           ">
 
@@ -132,6 +142,7 @@ export const HomePage = () => {
             {/* THE QUOTE */}
             <div className=" text-4xl text-white relative 
             sm1:right-[8rem]
+            sm3:right-[9rem]
             ">
               <p>Where Vision Meets Aspiration</p>
             </div>
@@ -286,6 +297,7 @@ export const HomePage = () => {
           {/* NETWORKING SERVICE HEADING */}
           <div className=" text-4xl font-bold
           sm1:w-[14rem]
+          sm3:w-[25rem]
           
           ">
             <h1>Networking Services</h1>
@@ -359,6 +371,7 @@ export const HomePage = () => {
           {/* NETWORKING SERVICE HEADING */}
           <div className=" text-4xl font-bold
           sm1:w-[14rem]
+          sm3:w-[25rem]
           ">
             <h1>CCTV Services</h1>
           </div>
