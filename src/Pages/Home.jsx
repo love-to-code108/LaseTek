@@ -328,7 +328,7 @@ export const HomePage = () => {
 
       {/* CCTV SERVICES */}
       <div className=" flex justify-between 
-        sm1:py-10
+        sm1:py-10 sm1:mb-[4rem]
         ">
 
 
@@ -392,7 +392,69 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
+
       {/* OUR ACHIEVEMENTS  */}
+      <div>
+
+
+        {/* HEADING */}
+        <div className=" 
+        sm1:text-5xl font-bold mb-2
+        ">
+          <h1>Our Achievements</h1>
+        </div>
+
+
+        {/* THE PARAGRAPH */}
+          <div className=" 
+          sm1:mb-[4rem]
+          ">
+            <p>At LaseTek, we take pride in our achievements, having successfully completed over 100 projects for esteemed clients like Tata Steel. With 40+ years of combined expertise, we’ve built strong partnerships with global technology leaders such as Cisco, Fortigate, and Hikvision. Our commitment to quality and innovation has positioned us as a trusted provider in networking and security solutions.</p>
+          </div>
+
+
+        {/* THREE STATS */}
+        <div className=" flex w-[100%] sm1:justify-around
+        sm1:mb-[8rem]
+        " >
+
+
+          {/* STAT 1 */}
+            <div className=" flex flex-col justify-center items-center text-xl">
+              <p>Project Completed</p>
+              <h1 className=" text-7xl font-bold">100+</h1>
+            </div>
+
+            <div className=" w-[2px] bg-[var(--darkGrey)]"></div>
+
+
+          {/* STAT 2  */}
+          <div className=" flex flex-col justify-center items-center text-xl">
+              <p>Meters of Wire Laid</p>
+              <h1 className=" text-7xl font-bold">10,000 m+</h1>
+            </div>
+
+            <div className=" w-[2px] bg-[var(--darkGrey)]"></div>
+
+
+          {/* STAT 3 */}
+          <div className=" flex flex-col justify-center items-center text-xl">
+              <p>Switches Installed</p>
+              <h1 className=" text-7xl font-bold">1000+</h1>
+            </div>
+
+        </div>
+      </div>
+
+
+
+
+
 
 
 
