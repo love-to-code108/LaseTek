@@ -2,6 +2,7 @@
 import heroSectionImg1 from "../assets/Version2/HeroSection1.png"
 import heroSectionImg2 from "../assets/Version2/HeroSection3.png"
 import heroSectionImg3 from "../assets/Version2/HeroSection2.png"
+import doubleQuotesImg from "../assets/Version2/dobuleQuotes.svg"
 
 
 
@@ -31,7 +32,8 @@ export const HomePage = () => {
 
 
           {/* HERO SECTION  */}
-            <div className="flex flex-col py-10 relative h-[30rem]">
+            <div className="flex flex-col py-10 relative h-[30rem]
+            sm1:mb-[3rem]">
 
 
               {/* HERO SECTION WRITING WRAPPER */}
@@ -81,7 +83,38 @@ export const HomePage = () => {
 
             </div>
 
+
+
+
+
+
+
+
       {/* THE QUOTE */}
+          <div className=" flex justify-center items-center bg-[var(--lastekBlue)]
+          sm1:py-10 sm1:mb-[4rem] relative
+          ">
+
+            
+
+
+            {/* THE QUOTE */}
+            <div className=" text-4xl text-white">
+              <p>Where Vision Meets Aspiration</p>
+            </div>
+
+
+            {/* QUOTE IMG 1 */}
+            <div>
+                <img className=" absolute 
+                sm1:w-[5rem] bottom-0 right-[6rem]
+                "
+                 src={doubleQuotesImg} alt="" />
+            </div>
+
+
+
+          </div>
 
 
       {/* ABOUT US */}
