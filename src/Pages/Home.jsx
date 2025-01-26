@@ -35,8 +35,8 @@ export const HomePage = () => {
 
 
           {/* HERO SECTION  */}
-            <div className="flex flex-col py-10 relative h-[30rem]
-            sm1:mb-[3rem]">
+            <div className="flex flex-col relative h-[30rem]
+            sm1:mb-[3rem] sm1:py-10">
 
 
               {/* HERO SECTION WRITING WRAPPER */}
@@ -152,8 +152,59 @@ export const HomePage = () => {
 
         </div>
 
-      {/* SERVICES WE PROVIDE */}
 
+
+
+
+
+
+
+      {/* SERVICES WE PROVIDE */}
+      <div className=" flex flex-col
+      sm1:py-10">
+        
+        {/* SERVICES SECTION WRITING SUPER BOX */}
+        <div className="sm1:w-[50rem] sm3:w-[55rem] ">
+            {/* HEADING */}
+            <h1 className=" md:text-5xl font-bold mb-4
+            sm3:text-4xl
+            text-5xl">
+              <span className="">Services</span> We Provide
+            </h1>
+
+            {/* OTHER TEXT */}
+            <div className="md:text-xl">
+            We take pride in being trusted partners to industry leaders, including Tata Steel Ltd and many others across multiple locations. Our partnerships with global technology providers like Cisco, Fortigate, R&M, and Hikvision enable us to deliver world-class solutions that exceed expectations.
+            <br />
+            <br />
+
+            <span className=" text-[#383dad] font-bold text-2xl">Our Client Base:</span>
+            <ul className=" list-disc ml-6">
+              <li><span className=" font-bold">Tata Steel Ltd</span> (Jamshedpur, Jharia, Noamundi, Joda)</li>
+              <li className=" font-bold"> Tata Steel Ltd Meramandali</li>
+              <li>Rourkela, Bokaro, Durgapur, Bhilai</li>
+            </ul>
+
+
+            <br />
+
+            <span className=" text-[#383dad] font-bold text-2xl">Our Technology Partners:</span>
+            
+            <ul className=" list-disc ml-6">
+              <li><span className=" font-bold text-[#ff3131]">Cisco:</span> Advanced networking switches for seamless connectivity</li>
+              <li><span className=" font-bold text-[#ff3131]">Fortigate:</span> Cutting-edge firewall security systems to safeguard your business</li>
+              <li><span className=" font-bold text-[#ff3131]">R&M:</span> High-quality networking components for robust infrastructure
+              </li>
+              <li><span className=" font-bold text-[#ff3131]">Hikvision:</span> Reliable cameras and NVR solutions for top-tier surveillance</li>
+              <li><span className=" font-bold text-[#ff3131]">RIT</span></li>
+            </ul>
+            
+            <br />
+            At LaseTek, our services are backed by a commitment to excellence and innovation. Together with our clients and partners, <span className=" font-bold">we work tirelessly to ensure every project is executed with precision, quality, and on-time delivery.</span>
+            </div>
+          </div>
+
+      </div>
 
 
       {/* NETWORKING SERVICES */}
