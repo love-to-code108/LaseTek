@@ -11,6 +11,9 @@ import { ServicesWeProvideCardV2 } from "../components/ServicesWeProvideCardV2"
 import servicesWeProvideImg1 from "../assets/img1.png"
 import servicesWeProvideImg2 from "../assets/img2.png"
 import servicesWeProvideImg3 from "../assets/img3.png"
+import cctvImg1 from "../assets/Version2/cctv1.png"
+import cctvImg2 from "../assets/Version2/cctv2.png"
+import cctvImg3 from "../assets/Version2/cctv3.png"
 import { LineBreakV2 } from "../components/LineBreakV2"
 
 
@@ -192,7 +195,7 @@ export const HomePage = () => {
 
       {/* SERVICES WE PROVIDE */}
       <div className=" flex flex-col
-      sm1:py-10 ">
+      sm1:py-10">
         
 
         {/* SERVICES SECTION WRITING SUPER BOX */}
@@ -248,15 +251,20 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
       {/* NETWORKING SERVICES */}
         <div className=" flex justify-between 
-        sm1:py-10 sm1:w-[]
+        sm1:py-10 sm1:mb-[4rem]
         ">
 
 
 
           {/* NETWORKING SERVICE HEADING */}
-          <div className=" text-4xl">
+          <div className=" text-4xl font-bold">
             <h1>Networking Services</h1>
           </div>
 
@@ -300,10 +308,6 @@ export const HomePage = () => {
            
            />
            
-
-
-
-           
           </div>
           </div>
 
@@ -316,7 +320,75 @@ export const HomePage = () => {
 
 
 
+
+
+
+
+
+
       {/* CCTV SERVICES */}
+      <div className=" flex justify-between 
+        sm1:py-10
+        ">
+
+
+
+          {/* NETWORKING SERVICE HEADING */}
+          <div className=" text-4xl font-bold
+          sm1:w-[20rem]
+          ">
+            <h1>CCTV Services</h1>
+          </div>
+
+
+          {/* THE LINE THAT DIVIDES */}
+          <div className=" flex">
+            <div className=" bg-[var(--darkGrey)] w-[1px]"></div>
+
+
+          {/* ALL THE CARDS IN DIV COLUMN */}
+          <div className=" flex flex-col items-start">
+
+
+            {/* CARD 1 */}
+            <ServicesWeProvideCardV2 
+            heading = "CCTV System Design and Planning"
+            para = "Effective CCTV System Design and Planning is the foundation of robust security. At LaseTek, we assess your unique requirements, analyze the layout, and craft tailored solutions to ensure optimal coverage. Our detailed planning ensures no blind spots, seamless integration with existing systems, and scalability for future needs, delivering a security framework you can trust."
+            img = {cctvImg1} />
+           <LineBreakV2/>
+
+
+
+           {/* CARD 2 */}
+           <ServicesWeProvideCardV2 
+           heading = "CCTV Installation and Setup"
+
+           para = "Seamless CCTV Installation and Setup is key to reliable surveillance. At LaseTek, we handle everything from mounting cameras to setting up NVRs and wiring with precision. Our team ensures every component is securely installed and perfectly positioned, guaranteeing comprehensive coverage and immediate functionality for your peace of mind."
+           img = {cctvImg2}
+           
+           />
+           <LineBreakV2/>
+
+
+
+
+           {/* CARD 3 */}
+           <ServicesWeProvideCardV2 
+           heading = "CCTV Configuration and Management"
+           para = "Proper CCTV Configuration and Management are essential for maximizing system performance. At LaseTek, we fine-tune your cameras, NVRs, and related equipment to ensure optimal functionality. From customizing settings to managing system updates, we provide ongoing support to keep your surveillance system running smoothly and securely."
+           img = {cctvImg3}
+           
+           />
+           
+
+
+
+           
+          </div>
+          </div>
+
+
+        </div>
 
 
 

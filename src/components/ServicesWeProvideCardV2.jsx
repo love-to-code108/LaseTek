@@ -18,11 +18,13 @@ export const ServicesWeProvideCardV2 = (props) => {
         
             {/* HEADING */}
             <h1 className=" text-2xl font-bold
-            sm1:mb-2
+            sm1:mb-6
             ">{props.heading}</h1>
 
             {/* THE PARAGRAPH */}
-            <p>{props.para}</p>
+            <p className="
+            sm1:text-sm
+            ">{props.para}</p>
 
 
         </div>
