@@ -6,6 +6,9 @@ import heroSectionImg3 from "../assets/Version2/HeroSection2.png"
 import doubleQuotesImg from "../assets/Version2/dobuleQuotes.svg"
 // ABOUT US SECTION
 import aboutUsSectionImg from "../assets/Version2/aboutUsSectionImg.png"
+import { ServicesWeProvideCardV2 } from "../components/ServicesWeProvideCardV2"
+// SERVICES WE PROVIDE
+import servicesWeProvideImg1 from "../assets/img1.png"
 
 
 
@@ -186,7 +189,7 @@ export const HomePage = () => {
 
       {/* SERVICES WE PROVIDE */}
       <div className=" flex flex-col
-      sm1:py-10">
+      sm1:py-10 ">
         
 
         {/* SERVICES SECTION WRITING SUPER BOX */}
@@ -243,12 +246,14 @@ export const HomePage = () => {
 
 
       {/* NETWORKING SERVICES */}
-        <div className=" flex justify-between">
+        <div className=" flex justify-between
+        sm1:py-10
+        ">
 
 
 
           {/* NETWORKING SERVICE HEADING */}
-          <div>
+          <div className=" text-4xl">
             <h1>Networking Services</h1>
           </div>
 
@@ -259,6 +264,11 @@ export const HomePage = () => {
 
           {/* ALL THE CARDS IN DIV COLUMN */}
           <div className=" flex flex-col ">
+            <ServicesWeProvideCardV2 
+            heading = "Network Design and Consultant"
+            para = "Setting up a network doesn’t have to be complicated. At LaseTek, we specialize in professional installation and configuration of network systems tailored to your needs. From connecting devices to ensuring optimal performance, we handle everything with precision and care. Let us simplify the process so you can focus on what matters most—your business."
+            img = {servicesWeProvideImg1} />
+           
 
           </div>
 
@@ -292,5 +302,10 @@ export const HomePage = () => {
     </div>
   )
 }
+
+
+
+
+
 
 
