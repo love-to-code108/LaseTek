@@ -35,18 +35,28 @@ export const HomePage = () => {
 
 
 
+   // GO TO TOP 
+   const scrollToTop =  () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // ALWAYS START THE PAGE FROM TOP
+  scrollToTop();
 
 
   return (
     
     // ============= MAIN 1 =============== START
     <div className=" flex justify-center bg-[var(--lighterGrey)]">
+      
+      <div className=" flex justify-center max-w-[1700px]">
 
         {/* =============== MAIN 2 ============= START*/}
-        <div className=" flex flex-col bg-[var(--white)] max-w-[1700px] w-[100%]
+        <div className=" flex flex-col bg-[var(--white)] max-w-[1500px] w-[100%]
         sm1:px-8 
         sm2:px-[3rem]
         sm3:px-[4rem]
+        lg:px-[5rem]
         ">
       
 
@@ -68,17 +78,21 @@ export const HomePage = () => {
 
 
               {/* HERO SECTION WRITING WRAPPER */}
-              <div className=" w-[32rem]">
+              <div className=" w-[32rem]
+              xl:w-[39rem] heroSectionWriting">
 
                 {/* PRECISION IN NETWORKING */}
-                  <h1 className=" text-5xl font-bold">Precision In <span  className=" text-[var(--red)]">Networking</span></h1>
+                  <h1 className=" text-5xl
+                  xl:text-6xl font-bold">Precision In <span  className=" text-[var(--red)]">Networking</span></h1>
                     
                 {/* EXCELLENCE IN SECURITY */}
-                <h1 className=" text-5xl font-bold mb-2">Excellence in Security</h1>
+                <h1 className=" text-5xl
+                xl:text-6xl font-bold mb-2">Excellence in Security</h1>
 
                 {/* PARAGRAPH */}
                 <p className=" w-[30rem] 
                 sm1:text-sm
+                md:text-base
                  ">Building lasting partnerships through integrity, innovation, and unmatched service— <span className=" text-[var(--red)]">trusted by industry leaders like Tata Steel</span> and powered by global technology brands</p>
                   
 
@@ -101,20 +115,23 @@ export const HomePage = () => {
 
 
                   {/* IMAGE 2 */}
-                  <img className="absolute bottom-0 object-cover
+                  <img className="heroSectionImg2 absolute bottom-0 object-cover
                   sm1:left-[43%] sm1:w-[16rem] sm1:h-[16rem]
                   sm2:left-[43%] sm2:w-[18rem] sm2:h-[18rem]
                   sm3:left-[47%] sm3:w-[16rem] sm3:h-[22rem]
-                  md:left-[47%] md:h-[23rem] md:w-[18rem]"
+                  md:left-[47%] md:h-[23rem] md:w-[18rem]
+                  lg:h-[25rem]
+                  "
 
                     src={heroSectionImg2} alt="" />
 
 
 
                   {/* IMAGE 3 */}
-                  <img className="absolute bottom-0 right-0 object-cover 
+                  <img className="heroSectionImg3 absolute bottom-0 right-0 object-cover 
                   sm1:w-[27%] sm1:h-[29rem] 
-                  sm3:w-[27%] sm3:h-[31rem]"
+                  sm3:w-[27%] sm3:h-[33rem]
+                  lg:h-[36rem]"
 
                    src={heroSectionImg3} alt="" />
                 </div>
@@ -134,11 +151,11 @@ export const HomePage = () => {
 
 
       {/* THE QUOTE */}
-          <div className=" flex justify-end items-center bg-[var(--lastekBlue)] relative
-          sm1:py-10 sm1:mb-[1rem] sm1:w-[100vw] sm1:right-[2rem] 
+          <div className=" flex justify-end items-center bg-[var(--lastekBlue)] relative max-w-[1500px]
+          sm1:py-10 sm1:mb-[1rem] sm1:w-[100%] sm1:right-[2rem] 
           sm2:right-[3rem] 
           sm3:right-[4rem]
-          
+          md:right-[5rem]
           ">
 
             
@@ -456,6 +473,7 @@ export const HomePage = () => {
       {/* OUR ACHIEVEMENTS  */}
       <div className=" 
       sm1:py-10 sm1:mb-[6rem]
+      md:mb-[8rem]
       ">
 
 
@@ -630,6 +648,8 @@ export const HomePage = () => {
 
 
       {/* ===================== MAIN 2 ============== END */}
+      </div>
+
       </div>
 
 

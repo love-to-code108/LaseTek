@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from "react-router-dom"
+import { Link, NavLink, Route, Routes } from "react-router-dom"
 import { HomePage } from "./Pages/Home.jsx"
 import { Gallery } from "./Pages/Gallery.jsx"
 import "./index.css"
@@ -10,7 +10,7 @@ import logo from "./assets/Version2/Logo.svg"
 function App(){
   return (
     <div >
-      <div className=" flex justify-center w-[100%] sticky top-0 z-50">
+      <div className="bg-[var(--lighterGrey)] flex justify-center w-[100%] sticky top-0 z-50">
       <Navbar/>
       </div>
       
@@ -20,7 +20,7 @@ function App(){
     </Routes>
 
 
-    <div className=" w-[100%] flex justify-center">
+    <div id="ContactUs" className="bg-[var(--lighterGrey)] w-[100%] flex justify-center">
     <ContactUs/>
       </div>
     
@@ -34,9 +34,13 @@ function App(){
 // THE NAVBAR 
 const Navbar = () => {
 
+
+
+  
+
   return(
     <nav className=" flex items-center justify-between
-      bg-[#ffffff] max-w-[1700px] w-[100%]
+      bg-[#ffffff] max-w-[1500px] w-[100%]
       sm1:px-8 sm1:text-sm sm1:py-4
       sm2:px-[3rem]
       sm3:px-[4rem]
@@ -45,7 +49,7 @@ const Navbar = () => {
       ">
 
       {/* THE LOGO */}
-      <a to="/"><img className=" sm1:w-[11rem]" src={logo} alt="" /></a>
+      <Link to="/"><img className=" sm1:w-[11rem]" src={logo} alt="" /></Link>
 
       {/* THE NAVIGATION BAR */}
         <div className=" flex items-center justify-between bg-[var(--grey)]
@@ -65,11 +69,13 @@ const Navbar = () => {
 
 
 
+
+
 // THE CONTACT US SECTION
 const ContactUs = () => {
 
   return(
-    <div id="ContactUs" className=" flex flex-col items w-[100%] max-w-[1700px]
+    <div  className=" bg-white flex flex-col items w-[100%] max-w-[1500px]
     
     ">
       

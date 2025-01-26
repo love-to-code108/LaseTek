@@ -34,10 +34,11 @@ export const Gallery = () => {
     navigate("/");
   };
 
-  // GO TO CONTACT US SECTION
-  const scrollToContactUs = () => {
-    ContactUs.current.scrollIntoView({ behavior: "smooth" });
-  };
+
+  // GO TO END 
+  const scrollToBottom =  () => {
+    window.scrollTo({ bottom: 0, behavior: "smooth" });
+  }
 
   // GO TO TOP 
   const scrollToTop =  () => {
@@ -64,7 +65,7 @@ export const Gallery = () => {
     // ==MAIN 1==
     <div className="main-1 bg-[#f3f3f3] w-[100%] flex justify-center items-center z-0">
       {/* ==MAIN 2==  */}
-      <div className="main-2 bg-white z-10 w-[100vw] max-w-[1716px] relative">
+      <div className="main-2 bg-white z-10 w-[100vw] max-w-[1500px] relative">
 
 
 
@@ -105,7 +106,8 @@ export const Gallery = () => {
         xl:px-8
         md:px-8
         px-8
-        Gallery-masonry-style"
+        Gallery-masonry-style
+        md:mb-[6rem]"
         >
           <img src={image1} alt="" className="Gallery-indivisual-styles"/>
           <img src={image2} alt="" className="Gallery-indivisual-styles"/>
