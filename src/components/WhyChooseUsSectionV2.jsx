@@ -4,7 +4,7 @@
 export const WhyChooseUsSectionV2 = (props) => {
   return (
     <div className=" flex justify-center items-center
-    sm1:w-[30rem] sm1:mb-12 sm1:pl-6
+    sm1:w-[30rem] sm1:pl-6
     md:mr-8
     ">
         {/* IMAGE */}

@@ -22,10 +22,182 @@ import whyChooseUsimg4 from "../assets/Version2/trophy.png"
 import { LineBreakV2 } from "../components/LineBreakV2"
 import { WhyChooseUsSectionV2 } from "../components/WhyChooseUsSectionV2"
 
+// IMPORTING GSAP
+import { gsap } from "gsap/gsap-core"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react"
+
 
 
 
 export const HomePage = () => {
+
+
+
+  gsap.registerPlugin(useGSAP,ScrollTrigger);
+
+  useGSAP(() => {
+
+
+    // NETWORKING SERVICES
+
+
+    // CARD 1
+    gsap.to("#ServiceCard1",{
+      scrollTrigger:{
+        
+      trigger:"#ServiceCard1",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      // markers:true,
+      end:"780px",
+      },
+      duration:1,      
+    })
+
+
+    // CARD 2
+    gsap.to("#ServiceCard2",{
+      scrollTrigger:{
+        
+      trigger:"#ServiceCard2",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      end:"380px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+
+    // NETWORKING SERVICES
+    gsap.to("#NetworkingService",{
+      scrollTrigger:{
+        
+      trigger:"#NetworkingService",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      end:"780px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+
+
+
+
+    // CCTV SERVICES
+    // CARD 1
+    gsap.to("#CCTVCard",{
+      scrollTrigger:{
+        
+      trigger:"#CCTVCard1",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      // markers:true,
+      end:"780px",
+      },
+      duration:1,      
+    })
+
+
+    // CARD 2
+    gsap.to("#CCTVCard2",{
+      scrollTrigger:{
+        
+      trigger:"#CCTVCard2",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      end:"380px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+
+    // CCTV SERVICES
+    gsap.to("#CCTVService",{
+      scrollTrigger:{
+        
+      trigger:"#CCTVService",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      end:"780px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+
+
+    // WHY CHOOSE US SECTION 
+    gsap.to("#whyChooseUs",{
+      scrollTrigger:{
+        
+      trigger:"#whyChooseUs",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      end:"440px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+    // WHY CHOOSE US CARD 1
+    gsap.to("#whyChooseUsCard1",{
+      scrollTrigger:{
+        
+      trigger:"#whyChooseUsCard1",
+      pin: true,
+      scrub: 1,
+      start: "top 80px",
+      end:"300px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+    // WHY CHOOSE US CARD 2
+    gsap.to("#whyChooseUsCard2",{
+      scrollTrigger:{
+        
+      trigger:"#whyChooseUsCard2",
+      pin: true,
+      scrub: 1,
+      start: "top 80px",
+      end:"300px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+     // WHY CHOOSE US CARD 3
+     gsap.to("#whyChooseUsCard3",{
+      scrollTrigger:{
+        
+      trigger:"#whyChooseUsCard3",
+      pin: true,
+      scrub: 1,
+      start: "top 100px",
+      end:"100px",
+      // markers:true,
+      },
+      duration:1,      
+    })
+
+    
+    
+  })
+
 
 
 
@@ -45,7 +217,7 @@ export const HomePage = () => {
   }
 
   // ALWAYS START THE PAGE FROM TOP
-  scrollToTop();
+  // scrollToTop();
 
 
   return (
@@ -330,7 +502,7 @@ export const HomePage = () => {
 
 
           {/* NETWORKING SERVICE HEADING */}
-          <div className=" text-4xl font-bold
+          <div id="NetworkingService" className=" text-4xl font-bold
           sm1:w-[14rem]
           sm3:w-[25rem]
           md:text-5xl md:w-[28rem]
@@ -349,15 +521,18 @@ export const HomePage = () => {
 
 
             {/* CARD 1 */}
+            <div id="ServiceCard1" className=" bg-white">
             <ServicesWeProvideCardV2 
             heading = "Network Design and Consultant"
             para = "At LaseTek, we design tailored network solutions that ensure seamless connectivity, reliability, and scalability. Our consultation services focus on understanding your unique needs, providing expert guidance to build networks that support your growth. Whether upgrading an existing system or starting from scratch, we’re here to simplify the process and keep you connected."
             img = {servicesWeProvideImg1} />
-           <LineBreakV2/>
+           {/* <LineBreakV2/> */}
+           </div>
 
 
 
            {/* CARD 2 */}
+           <div id="ServiceCard2" className=" bg-white z-[2] h-[28rem] flex flex-col justify-center items-center">
            <ServicesWeProvideCardV2 
            heading = "Network Installation and Configuration"
 
@@ -365,24 +540,29 @@ export const HomePage = () => {
            img = {servicesWeProvideImg2}
            
            />
-           <LineBreakV2/>
+           {/* <LineBreakV2/> */}
+           </div>
 
 
 
 
            {/* CARD 3 */}
+           <div id="ServiceCard2" className=" bg-white z-[2] h-[28rem] flex flex-col justify-center items-center">
            <ServicesWeProvideCardV2 
            heading = "Network Optimization and Device Integration"
            para = "At LaseTek, we ensure your network runs at peak performance by optimizing every connection and integrating devices seamlessly. Our solutions are designed to enhance speed, reliability, and efficiency, making your systems work smarter together. Let us help you get the most out of your network."
            img = {servicesWeProvideImg3}
-           
            />
+           </div>
            
           </div>
           </div>
 
 
         </div>
+
+
+
 
 
 
@@ -404,7 +584,7 @@ export const HomePage = () => {
 
 
           {/* NETWORKING SERVICE HEADING */}
-          <div className=" text-4xl font-bold
+          <div id="CCTVService" className=" text-4xl font-bold
           sm1:w-[14rem]
           sm3:w-[25rem]
           md:text-5xl
@@ -423,15 +603,18 @@ export const HomePage = () => {
 
 
             {/* CARD 1 */}
+            <div id="CCTVCard1" className=" bg-white">
             <ServicesWeProvideCardV2 
             heading = "CCTV System Design and Planning"
             para = "Effective CCTV System Design and Planning is the foundation of robust security. At LaseTek, we assess your unique requirements, analyze the layout, and craft tailored solutions to ensure optimal coverage. Our detailed planning ensures no blind spots, seamless integration with existing systems, and scalability for future needs, delivering a security framework you can trust."
             img = {cctvImg1} />
-           <LineBreakV2/>
+           {/* <LineBreakV2/> */}
+           </div>
 
 
 
            {/* CARD 2 */}
+           <div id="CCTVCard2" className=" bg-white z-[2] h-[28rem] flex flex-col justify-center items-center">
            <ServicesWeProvideCardV2 
            heading = "CCTV Installation and Setup"
 
@@ -439,19 +622,20 @@ export const HomePage = () => {
            img = {cctvImg2}
            
            />
-           <LineBreakV2/>
+           {/* <LineBreakV2/> */}
+           </div>
 
 
 
 
            {/* CARD 3 */}
+           <div id="CCTVCard3" className=" bg-white z-[2] h-[28rem] flex flex-col justify-center items-center">
            <ServicesWeProvideCardV2 
            heading = "CCTV Configuration and Management"
            para = "Proper CCTV Configuration and Management are essential for maximizing system performance. At LaseTek, we fine-tune your cameras, NVRs, and related equipment to ensure optimal functionality. From customizing settings to managing system updates, we provide ongoing support to keep your surveillance system running smoothly and securely."
            img = {cctvImg3}
-           
            />
-           
+           </div>
 
 
 
@@ -461,6 +645,10 @@ export const HomePage = () => {
 
 
         </div>
+
+
+
+
 
 
 
@@ -567,6 +755,10 @@ export const HomePage = () => {
 
 
 
+
+
+
+
       {/* WHY CHOOSE US */}
       <div className=" flex justify-between 
         sm1:py-10 sm1:mb-[6rem]
@@ -574,8 +766,8 @@ export const HomePage = () => {
 
 
 
-          {/* NETWORKING SERVICE HEADING */}
-          <div className="
+          {/* WHY CHOOSE US SECTION HEADING */}
+          <div id="whyChooseUs" className="
           sm1:w-[28rem] sm1:mr-[2rem]
           ">
             <h1 className=" text-4xl font-bold mb-2
@@ -595,43 +787,50 @@ export const HomePage = () => {
 
 
             {/* CARD 1 */}
+            <div id="whyChooseUsCard1" className=" bg-white">
             <WhyChooseUsSectionV2
             heading = "Tailored Solutions"
             text = "We understand that every business is unique. That’s why we offer customized networking and security solutions designed to meet your specific needs."
             img = {whyChooseUsimg1}
             />
-           <LineBreakV2/>
+           {/* <LineBreakV2/> */}
+           </div>
 
 
 
            {/* CARD 2 */}
+           <div id="whyChooseUsCard2" className=" bg-white z-[2] h-[12rem] flex flex-col justify-center items-center">
            <WhyChooseUsSectionV2
             heading = "Commitment to Excellence"
             text = "As an MSME-certified company, we are dedicated to delivering top-quality services with a focus on precision, innovation, and timely completion of projects."
             img = {whyChooseUsimg2}
             />
-           <LineBreakV2/>
+           {/* <LineBreakV2/> */}
+           </div>
 
 
 
 
            {/* CARD 3 */}
+           <div id="whyChooseUsCard3" className=" bg-white z-[2] h-[12rem] flex flex-col justify-center items-center">
            <WhyChooseUsSectionV2
             heading = "Trusted by Industry Leaders"
             text = "Our strong partnerships with clients like Tata Steel Ltd and global technology providers like Cisco, Fortigate, R&M, and Hikvision reflect the trust placed in our services."
             img = {whyChooseUsimg3}
             />
-           <LineBreakV2/>
+           {/* <LineBreakV2/> */}
+           </div>
 
 
 
            {/* CARD 4 */}
+           <div id="whyChooseUsCard4" className=" bg-white z-[2] h-[12rem] flex flex-col justify-center items-center">
            <WhyChooseUsSectionV2
             heading = "Proven Expertise"
             text = "Our team has successfully delivered 100+ projects across various industries, ensuring quality and reliability at every step."
             img = {whyChooseUsimg4}
             />
-           
+           </div>
            
 
 

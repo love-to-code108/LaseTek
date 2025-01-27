@@ -6,7 +6,7 @@ export const ServicesWeProvideCardV2 = (props) => {
 
 
   return (
-    <div className="flex pt-2
+    <div id={props.ids} style={{zIndex:`${props.z}`}} className="flex pt-2 bg-white
     sm1:ml-[3rem] sm1:mb-12 
     ">
 
