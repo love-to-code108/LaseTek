@@ -26,7 +26,6 @@ import { WhyChooseUsSectionV2 } from "../components/WhyChooseUsSectionV2"
 import { gsap } from "gsap/gsap-core"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react"
 
 
 
@@ -35,11 +34,21 @@ export const HomePage = () => {
 
 
 
+
+   // GO TO TOP 
+   const scrollToTop =  () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("hello")
+  }
+
+  // ALWAYS START THE PAGE FROM TOP
+  scrollToTop();
+
+
+
   gsap.registerPlugin(useGSAP,ScrollTrigger);
 
   useGSAP(() => {
-
-
     // NETWORKING SERVICES
 
 
@@ -205,19 +214,14 @@ export const HomePage = () => {
 
 
 
+  
 
 
 
 
 
 
-   // GO TO TOP 
-   const scrollToTop =  () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  // ALWAYS START THE PAGE FROM TOP
-  // scrollToTop();
+ 
 
 
   return (

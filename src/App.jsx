@@ -21,9 +21,6 @@ function App(){
 
 
   useEffect(() => {
-    
-    
-    
 
     // Function to disable scroll wheel
     const disableScrollWheel = () => {
@@ -31,14 +28,12 @@ function App(){
     };
 
     // Function to enable scroll wheel
-    const enableScrollWheel = () => {
-      
-      
+    const enableScrollWheel = () => {   
       document.body.style.overflow = "auto"; // Restores default scroll behavior
     };
 
 
-    // disableScrollWheel()
+    disableScrollWheel()
 
     
 
@@ -52,41 +47,41 @@ function App(){
 
    // ================================== ANIMATION =============================
 
-  //  useGSAP(() => {
-  //   const tl = gsap.timeline();
+   useGSAP(() => {
+    const tl = gsap.timeline();
 
-  //   tl.to("#WhiteLine",{
-  //     width:"100%",
-  //     duration:"1",
-  //   })
-  //   tl.from("#Lase",{
-  //     y:"100",
-  //     duration:"1",
-  //     ease: "power4.out",
-  //   },">")
-  //   tl.from("#Tek",{
-  //     y:"100",
-  //     duration:"1",
-  //     ease: "power4.out",
-  //   },"-=0.8")
-  //   tl.from("#Text",{
-  //     y:"-100",
-  //     duration:"1",
-  //     ease: "power4.out",
-  //   },"-=0.8")
-  //   tl.to("#bigBlack",{
-  //     y:"-100%",
-  //     duration:"2",
-  //     ease:"power4.in"
-  //   },">")
-  //   tl.to('#bigRed',{
-  //     y:"-100%",
-  //     duration:"2",
-  //     ease:"power4.in",
-  //   },"-=1.6")
+    tl.to("#WhiteLine",{
+      width:"100%",
+      duration:"1",
+    })
+    tl.from("#Lase",{
+      y:"100",
+      duration:"1",
+      ease: "power4.out",
+    },">")
+    tl.from("#Tek",{
+      y:"100",
+      duration:"1",
+      ease: "power4.out",
+    },"-=0.8")
+    tl.from("#Text",{
+      y:"-100",
+      duration:"1",
+      ease: "power4.out",
+    },"-=0.8")
+    tl.to("#bigBlack",{
+      y:"-100%",
+      duration:"2",
+      ease:"power4.in"
+    },">")
+    tl.to('#bigRed',{
+      y:"-100%",
+      duration:"2",
+      ease:"power4.in",
+    },"-=1.6")
 
 
-  //  })
+   })
 
    
 
@@ -98,33 +93,33 @@ function App(){
 
 
       {/* ============================ ANIMATION ==================================== */}
-{/* 
-      // <div id="bigRed" ref={LandingAnimation} className=" fixed flex justify-center items-center overflow-hidden w-[100%] h-[100%] z-[500]">
-      // <div id="bigBlack"  className=" flex justify-center items-center w-[100%] h-[100%] relative blackAnimationBackground">
+ 
+      <div id="bigRed" ref={LandingAnimation} className=" fixed flex justify-center items-center overflow-hidden w-[100%] h-[100%] z-[500]">
+      <div id="bigBlack"  className=" flex justify-center items-center w-[100%] h-[100%] relative blackAnimationBackground">
 
 
-      //   <div className=" TextToAnimate ">
+        <div className=" TextToAnimate ">
 
 
           
-      //     <div className=" flex text-white sm1:text-5xl sm3:text-6xl xl:text-8xl ">
+          <div className=" flex text-white sm1:text-5xl sm3:text-6xl xl:text-8xl ">
 
 
-      //       <div  className=" overflow-hidden">
-      //           <h1 id="Lase" className=" ls mr-2"><span className=" text-[#ff3131]">L</span>ase </h1> 
-      //       </div>
+            <div  className=" overflow-hidden">
+                <h1 id="Lase" className=" ls mr-2"><span className=" text-[#ff3131]">L</span>ase </h1> 
+            </div>
 
-      //       <div className=" overflow-hidden">
-      //           <h1 id="Tek" className=" ls"><span className=" text-[#ff3131]">T</span>ek</h1>
-      //       </div>
-      //     </div>
+            <div className=" overflow-hidden">
+                <h1 id="Tek" className=" ls"><span className=" text-[#ff3131]">T</span>ek</h1>
+            </div>
+          </div>
 
-      //     <div id="WhiteLine" className=" w-[0%] h-[2px] bg-white mb-2"></div>
+          <div id="WhiteLine" className=" w-[0%] h-[2px] bg-white mb-2"></div>
 
-      //     <div className="sm1:text-base md:text-lg lg:text-xl xl:text-2xl text-white overflow-hidden">
-      //       <p id="Text" className=" ls ">Solution For Automation</p>
-      //     </div>
-      //   </div>
+          <div className="sm1:text-base md:text-lg lg:text-xl xl:text-2xl text-white overflow-hidden">
+            <p id="Text" className=" ls ">Solution For Automation</p>
+          </div>
+        </div>
 
 
 
@@ -134,8 +129,8 @@ function App(){
 
         
 
-      // </div>
-      // </div> */}
+      </div>
+      </div> 
 
 
       {/* ============================ ANIMATION ==================================== */}
@@ -201,6 +196,16 @@ const Navbar = () => {
   }
 
 
+  // GO TO TOP 
+  const scrollToTop =  () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("hello")
+  }
+
+  // ALWAYS START THE PAGE FROM TOP
+  scrollToTop();
+
+
 
   
 
@@ -215,7 +220,7 @@ const Navbar = () => {
       ">
 
       {/* THE LOGO */}
-      <Link to="/"><img className=" sm1:w-[11rem]" src={logo} alt="" /></Link>
+      <Link onClick={scrollToTop} to="/"><img className=" sm1:w-[11rem]" src={logo} alt="" /></Link>
 
       {/* THE NAVIGATION BAR */}
         <div className=" flex items-center justify-between bg-[var(--grey)] relative

@@ -1,5 +1,4 @@
-import { useNavigate } from "react-router-dom";
-import logo from "../assets/Vector-1.png";
+
 
 // IMAGES
 import image1 from "../assets/Gallery-Images/img1.jpg";
@@ -20,8 +19,6 @@ import image15 from "../assets/Gallery-Images/img15.jpg";
 import image16 from "../assets/Gallery-Images/img16.jpg";
 import image17 from "../assets/Gallery-Images/img17.jpg";
 
-
-import { useRef } from "react";
 
 export const Gallery = () => {
   
@@ -99,7 +96,8 @@ export const Gallery = () => {
         md:px-8
         px-8
         Gallery-masonry-style
-        md:mb-[6rem]"
+        md:mb-[6rem]
+        "
         >
           <img src={image1} alt="" className="Gallery-indivisual-styles"/>
           <img src={image2} alt="" className="Gallery-indivisual-styles"/>
