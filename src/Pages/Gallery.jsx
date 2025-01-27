@@ -15,7 +15,7 @@ import image11 from "../assets/Gallery-Images/img11.jpg";
 import image12 from "../assets/Gallery-Images/img12.jpg";
 import image13 from "../assets/Gallery-Images/img13.jpg";
 import image14 from "../assets/Gallery-Images/img14.jpg";
-import image15 from "../assets/Gallery-Images/img15.jpg";
+// import image15 from "../assets/Gallery-Images/img15.jpg";
 import image16 from "../assets/Gallery-Images/img16.jpg";
 import image17 from "../assets/Gallery-Images/img17.jpg";
 
@@ -113,7 +113,7 @@ export const Gallery = () => {
           <img src={image12} alt="" className="Gallery-indivisual-styles"/>
           <img src={image13} alt="" className="Gallery-indivisual-styles"/>
           <img src={image14} alt="" className="Gallery-indivisual-styles"/>
-          <img src={image15} alt="" className="Gallery-indivisual-styles"/>
+          {/* <img src={image15} alt="" className="Gallery-indivisual-styles"/> */}
           <img src={image16} alt="" className="Gallery-indivisual-styles"/>
           <img src={image17} alt="" className="Gallery-indivisual-styles"/>
         </div>

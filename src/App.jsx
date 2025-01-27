@@ -293,7 +293,8 @@ const ContactUs = () => {
 
           {/* PHONE NUMBER */}
             <p><span className=" font-bold">Mobile</span> : +91 - 9955440037 <br /> <span className=" 
-            sm1:ml-[3rem]
+            sm1:ml-[3.05rem]
+            md:ml-[3.9rem]
             ">+91 - 8986640037</span> </p>
 
             {/* EMAIL */}
