@@ -73,7 +73,7 @@ const Navbar = () => {
   const GalleryBeingClicked = () => {
     
     gsap.to(highlighter.current , {
-      x:"5.2rem"
+      x:"4.35rem"
     })
     gsap.to(home.current , {
       color:"black"
@@ -93,8 +93,8 @@ const Navbar = () => {
       sm1:px-8 sm1:text-sm sm1:py-4
       sm2:px-[3rem]
       sm3:px-[4rem]
-      md:text-base
-      lg:text-lg lg:px-[5rem]
+      text-lg
+      lg:px-[5rem]
       ">
 
       {/* THE LOGO */}
@@ -109,7 +109,9 @@ const Navbar = () => {
 
 {/* ================================= ANIMATION ===================================== */}
 
-          <div ref={highlighter}  className="w-[5rem] h-[2.2rem] absolute bg-[var(--lastekBlue)]" ></div>
+          <div ref={highlighter}  className="
+          
+          w-[4.6rem] h-[1.9rem] absolute bg-[var(--lastekBlue)]" ></div>
 
           <NavLink onClick={HomeBeingClicked}
            ref={home}  className=" z-10 bg-transparent sm1:px-4 sm1:py-1" to="/">Home</NavLink>
