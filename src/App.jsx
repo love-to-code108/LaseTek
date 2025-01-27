@@ -5,7 +5,12 @@ import "./index.css"
 
 // IMPORTING IMAGES 
 import logo from "./assets/Version2/Logo.svg"
-// import { useRef } from "react"
+import { useRef } from "react"
+
+// GSAP
+import { gsap } from "gsap/gsap-core"
+import { useGSAP } from "@gsap/react"
+
 
 
 function App(){
@@ -42,6 +47,41 @@ function App(){
 
 // THE NAVBAR 
 const Navbar = () => {
+  const highlighter = useRef(null)
+  const home = useRef(null)
+  const gallery = useRef(null)
+
+  
+
+  // WHEN HOME IS CLICKED
+  const HomeBeingClicked = () => {
+    
+    gsap.to(highlighter.current , {
+      x:"0"
+    })
+    gsap.to(gallery.current , {
+      color:"black"
+    })
+    gsap.to(home.current , {
+      color:"white"
+    })
+  }
+
+
+
+  // WHEN GALLERY IS BEING CLICKED
+  const GalleryBeingClicked = () => {
+    
+    gsap.to(highlighter.current , {
+      x:"5.2rem"
+    })
+    gsap.to(home.current , {
+      color:"black"
+    })
+    gsap.to(gallery.current , {
+      color:"white"
+    })
+  }
 
 
 
@@ -61,13 +101,23 @@ const Navbar = () => {
       <Link to="/"><img className=" sm1:w-[11rem]" src={logo} alt="" /></Link>
 
       {/* THE NAVIGATION BAR */}
-        <div className=" flex items-center justify-between bg-[var(--grey)]
+        <div className=" flex items-center justify-between bg-[var(--grey)] relative
         sm1:px-1 sm1:py-1 sm1:mr-[4.4rem] 
         md:mr-[4rem]
         lg:mr-[3.2rem]
         ">
-          <NavLink className="sm1:px-4 sm1:py-1" to="/">Home</NavLink>
-          <NavLink className="sm1:px-4 sm1:py-1" to="/gallery">Gallery</NavLink>
+
+{/* ================================= ANIMATION ===================================== */}
+
+          <div ref={highlighter}  className="w-[5rem] h-[2.2rem] absolute bg-[var(--lastekBlue)]" ></div>
+
+          <NavLink onClick={HomeBeingClicked}
+           ref={home}  className=" z-10 bg-transparent sm1:px-4 sm1:py-1" to="/">Home</NavLink>
+
+          <NavLink onClick={GalleryBeingClicked} ref={gallery}  className=" z-10 bg-transparent sm1:px-4 sm1:py-1" to="/gallery">Gallery</NavLink>
+
+
+
         </div>
 
       {/* THE CONTACT US BUTTON */}

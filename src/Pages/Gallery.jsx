@@ -24,15 +24,10 @@ import image17 from "../assets/Gallery-Images/img17.jpg";
 import { useRef } from "react";
 
 export const Gallery = () => {
-  const navigate = useNavigate();
-  const ContactUs = useRef(null);
+  
 
 
 
-  // GO TO HOME NAVIGATION
-  const GoToHome = () => {
-    navigate("/");
-  };
 
 
 

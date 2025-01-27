@@ -110,12 +110,12 @@ html {
 }
 
 
-.active{
+/* .active{
     background-color: var(--lastekBlue);
     color: white;
     transition: ease-in 200ms;
     border-radius: 3px;
-}
+} */
 
 
 
