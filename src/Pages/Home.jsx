@@ -294,6 +294,7 @@ export const HomePage = () => {
                   sm1:h-auto sm1:w-[40%]
                   sm3:w-[44%]
                   md:w-[44%]
+                   shadow-lg
 
                   " 
                   src={heroSectionImg1} alt="" />
@@ -307,6 +308,7 @@ export const HomePage = () => {
                   sm3:left-[47%] sm3:w-[16rem] sm3:h-[22rem]
                   md:left-[47%] md:h-[23rem] md:w-[18rem]
                   lg:h-[25rem]
+                   shadow-lg
                   "
 
                     src={heroSectionImg2} alt="" />
@@ -317,7 +319,8 @@ export const HomePage = () => {
                   <img className="heroSectionImg3 absolute bottom-0 right-0 object-cover 
                   sm1:w-[27%] sm1:h-[29rem] 
                   sm3:w-[27%] sm3:h-[33rem]
-                  lg:h-[36rem]"
+                  lg:h-[36rem]
+                   shadow-lg"
 
                    src={heroSectionImg3} alt="" />
                 </div>
