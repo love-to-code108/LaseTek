@@ -22,19 +22,17 @@ function App(){
 
   useEffect(() => {
     
-    // Declare preventDefault function for use in all listeners
-    const preventDefault = (e) => e.preventDefault();
+    
+    
 
     // Function to disable scroll wheel
     const disableScrollWheel = () => {
-      window.addEventListener("wheel", preventDefault, { passive: false });
-     
       document.body.style.overflow = "hidden"; // Disables all scrolling on the body
     };
 
     // Function to enable scroll wheel
     const enableScrollWheel = () => {
-      window.removeEventListener("wheel", preventDefault, { passive: false });
+      
       
       document.body.style.overflow = "auto"; // Restores default scroll behavior
     };
@@ -101,7 +99,7 @@ function App(){
 
       {/* ============================ ANIMATION ==================================== */}
 
-      <div id="bigRed" ref={LandingAnimation} className=" absolute flex justify-center items-center overflow-hidden w-[100%] h-[100%] z-[500]">
+      <div id="bigRed" ref={LandingAnimation} className=" fixed flex justify-center items-center overflow-hidden w-[100%] h-[100%] z-[500]">
       <div id="bigBlack"  className=" flex justify-center items-center w-[100%] h-[100%] relative blackAnimationBackground">
 
 
@@ -109,7 +107,7 @@ function App(){
 
 
           {/* wrapper */}
-          <div className=" flex text-white xl:text-8xl ">
+          <div className=" flex text-white sm1:text-5xl sm3:text-6xl xl:text-8xl ">
 
 
             <div  className=" overflow-hidden">
@@ -123,7 +121,7 @@ function App(){
 
           <div id="WhiteLine" className=" w-[0%] h-[2px] bg-white mb-2"></div>
 
-          <div className=" text-2xl text-white overflow-hidden">
+          <div className="sm1:text-base md:text-lg lg:text-xl xl:text-2xl text-white overflow-hidden">
             <p id="Text" className=" ls ">Solution For Automation</p>
           </div>
         </div>
