@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 
 @font-face {
     font-family: NeueMontreal-regular;
     src: url(./assets/Fonts/NeueMontreal-Regular.otf);
 }
+
+
 
 
 
@@ -176,3 +184,32 @@ html {
     }
 }
 
+
+
+
+
+/* ================ ANIMATION ============ */
+
+
+.ls{
+    font-family: League Spartan;
+  }
+
+.blackAnimationBackground{
+    background-image: url(./assets/Version2/animationBlack.svg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position-x: center;
+}
+
+.TextToAnimate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigRed{
+    background-color: rgba(255, 0, 0,1)
+}

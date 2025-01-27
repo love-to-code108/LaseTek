@@ -35,6 +35,10 @@ export const HomePage = () => {
 
 
 
+
+
+
+
    // GO TO TOP 
    const scrollToTop =  () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -45,10 +49,16 @@ export const HomePage = () => {
 
 
   return (
+
+
+    
     
     // ============= MAIN 1 =============== START
     <div className=" flex justify-center bg-[var(--lighterGrey)]">
       
+      
+
+
       <div className=" flex justify-center max-w-[1700px]">
 
         {/* =============== MAIN 2 ============= START*/}

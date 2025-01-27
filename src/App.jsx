@@ -2,10 +2,11 @@ import { Link, NavLink, Route, Routes } from "react-router-dom"
 import { HomePage } from "./Pages/Home.jsx"
 import { Gallery } from "./Pages/Gallery.jsx"
 import "./index.css"
+import "./App.css"
 
 // IMPORTING IMAGES 
 import logo from "./assets/Version2/Logo.svg"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 
 // GSAP
 import { gsap } from "gsap/gsap-core"
@@ -14,16 +15,134 @@ import { useGSAP } from "@gsap/react"
 
 
 function App(){
-  // const contactUs = useRef(null)
+  const LandingAnimation = useRef(null)
  
-  // const goToContactUs = () => {
-  //   window.scrollTo({ bottom: 0, behavior: "smooth" });
-  //   console.log('hello');
-  // }
+  
+
+
+  useEffect(() => {
+    
+    // Declare preventDefault function for use in all listeners
+    const preventDefault = (e) => e.preventDefault();
+
+    // Function to disable scroll wheel
+    const disableScrollWheel = () => {
+      window.addEventListener("wheel", preventDefault, { passive: false });
+     
+      document.body.style.overflow = "hidden"; // Disables all scrolling on the body
+    };
+
+    // Function to enable scroll wheel
+    const enableScrollWheel = () => {
+      window.removeEventListener("wheel", preventDefault, { passive: false });
+      
+      document.body.style.overflow = "auto"; // Restores default scroll behavior
+    };
+
+
+    disableScrollWheel()
+
+    
+
+    setTimeout(() => {
+      console.log("working");
+      return enableScrollWheel();
+    }, 4500);
+
+  }, []);
+
+
+   // ================================== ANIMATION =============================
+
+   useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.to("#WhiteLine",{
+      width:"100%",
+      duration:"1",
+    })
+    tl.from("#Lase",{
+      y:"100",
+      duration:"1",
+      ease: "power4.out",
+    },">")
+    tl.from("#Tek",{
+      y:"100",
+      duration:"1",
+      ease: "power4.out",
+    },"-=0.8")
+    tl.from("#Text",{
+      y:"-100",
+      duration:"1",
+      ease: "power4.out",
+    },"-=0.8")
+    tl.to("#bigBlack",{
+      y:"-100%",
+      duration:"2",
+      ease:"power4.in"
+    },">")
+    tl.to('#bigRed',{
+      y:"-100%",
+      duration:"2",
+      ease:"power4.in",
+    },"-=1.6")
+
+
+   })
+
+   
+
+
 
 
   return (
     <div >
+
+
+      {/* ============================ ANIMATION ==================================== */}
+
+      <div id="bigRed" ref={LandingAnimation} className=" absolute flex justify-center items-center overflow-hidden w-[100%] h-[100%] z-[500]">
+      <div id="bigBlack"  className=" flex justify-center items-center w-[100%] h-[100%] relative blackAnimationBackground">
+
+
+        <div className=" TextToAnimate ">
+
+
+          {/* wrapper */}
+          <div className=" flex text-white xl:text-8xl ">
+
+
+            <div  className=" overflow-hidden">
+                <h1 id="Lase" className=" ls mr-2"><span className=" text-[#ff3131]">L</span>ase </h1> 
+            </div>
+
+            <div className=" overflow-hidden">
+                <h1 id="Tek" className=" ls"><span className=" text-[#ff3131]">T</span>ek</h1>
+            </div>
+          </div>
+
+          <div id="WhiteLine" className=" w-[0%] h-[2px] bg-white mb-2"></div>
+
+          <div className=" text-2xl text-white overflow-hidden">
+            <p id="Text" className=" ls ">Solution For Automation</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        
+
+      </div>
+      </div>
+
+
+      {/* ============================ ANIMATION ==================================== */}
+
+
       <div className="bg-[var(--lighterGrey)] flex justify-center w-[100%] sticky top-0 z-50">
       <Navbar/>
       </div>
@@ -114,7 +233,7 @@ const Navbar = () => {
           w-[4.6rem] h-[1.9rem] absolute bg-[var(--lastekBlue)]" ></div>
 
           <NavLink onClick={HomeBeingClicked}
-           ref={home}  className=" z-10 bg-transparent sm1:px-4 sm1:py-1" to="/">Home</NavLink>
+           ref={home}  className=" z-10 bg-transparent sm1:px-4 sm1:py-1 text-white" to="/">Home</NavLink>
 
           <NavLink onClick={GalleryBeingClicked} ref={gallery}  className=" z-10 bg-transparent sm1:px-4 sm1:py-1" to="/gallery">Gallery</NavLink>
 
