@@ -35,10 +35,7 @@ export const Gallery = () => {
   };
 
 
-  // GO TO END 
-  const scrollToBottom =  () => {
-    window.scrollTo({ bottom: 0, behavior: "smooth" });
-  }
+
 
   // GO TO TOP 
   const scrollToTop =  () => {

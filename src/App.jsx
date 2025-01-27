@@ -5,9 +5,18 @@ import "./index.css"
 
 // IMPORTING IMAGES 
 import logo from "./assets/Version2/Logo.svg"
+// import { useRef } from "react"
 
 
 function App(){
+  // const contactUs = useRef(null)
+ 
+  // const goToContactUs = () => {
+  //   window.scrollTo({ bottom: 0, behavior: "smooth" });
+  //   console.log('hello');
+  // }
+
+
   return (
     <div >
       <div className="bg-[var(--lighterGrey)] flex justify-center w-[100%] sticky top-0 z-50">
